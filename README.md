@@ -1,26 +1,43 @@
-# Swin-Unet
-[ECCVW2022] The codes for the work "Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation"(https://arxiv.org/abs/2105.05537). Our paper has been accepted by ECCV 2022 MEDICAL COMPUTER VISION WORKSHOP (https://mcv-workshop.github.io/). We updated the Reproducibility. I hope this will help you to reproduce the results.
+# Swin-Unet  
+【ECCVW2022】本リポジトリは、「Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation」（[arXivリンク](https://arxiv.org/abs/2105.05537)）で提案された手法のコードです。  
+本論文は ECCV 2022 MEDICAL COMPUTER VISION WORKSHOP（[公式サイト](https://mcv-workshop.github.io/)）に採択されました。  
+再現性向上のための修正を行っています。結果の再現に役立つことを願っています。
 
-## 1. Download pre-trained swin transformer model (Swin-T)
-* [Get pre-trained model in this link] (https://drive.google.com/drive/folders/1UC3XOoezeum0uck4KBVGa8osahs6rKUY?usp=sharing): Put pretrained Swin-T into folder "pretrained_ckpt/"
+---
 
-## 2. Prepare data
+## 1. Swin Transformer（Swin-T）の事前学習済みモデルのダウンロード  
+* [こちらのリンクから事前学習済みモデルを取得](https://drive.google.com/drive/folders/1UC3XOoezeum0uck4KBVGa8osahs6rKUY?usp=sharing)  
+  → ダウンロードしたファイルを `pretrained_ckpt/` フォルダに配置してください。
 
-- The datasets we used are provided by TransUnet's authors. [Get processed data in this link] (Synapse/BTCV: https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd and ACDC: https://drive.google.com/drive/folders/1KQcrci7aKsYZi1hQoZ3T3QUtcy7b--n4).
+---
 
-## 3. Environment
+## 2. データの準備  
 
-- Please prepare an environment with python=3.7, and then use the command "pip install -r requirements.txt" for the dependencies.
+使用データセットは TransUnet の著者によって提供されています。以下のリンクから取得可能です：  
+- Synapse/BTCV: https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd  
+- ACDC: https://drive.google.com/drive/folders/1KQcrci7aKsYZi1hQoZ3T3QUtcy7b--n4
 
-## 4. Train/Test
+---
 
-- Run the train script on synapse dataset. The batch size we used is 24. If you do not have enough GPU memory, the bacth size can be reduced to 12 or 6 to save memory.
+## 3. 実行環境  
+
+Python 3.7 の環境を準備してください。その後、以下のコマンドで依存ライブラリをインストールします：
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4. 学習・テストの実行方法
+
+- Synapse データセットで学習スクリプトを実行します。バッチサイズは 24 を推奨していますが、GPU メモリの制約がある場合は 12 や 6 に変更可能です。
 
 - Train
 
 ```bash
 sh train.sh 
-# or 
+# または 
 python train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
 ```
 
@@ -32,14 +49,22 @@ sh test.sh
 python test.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --is_saveni --volume_path your DATA_DIR --output_dir your OUT_DIR --max_epoch 150 --base_lr 0.05 --img_size 224 --batch_size 24
 ```
 
-## Reproducibility
+---
 
+## 再現性について
 
-- Codes
+### コードについて
+学習済みモデルは Huawei Cloud に保存されていますが、社内規定により外部にファイルを送信することはできません。
 
-Our trained model is stored on the Huawei cloud. The interns do not have the right to send any files out from the internal system, so I can't share our trained model weights. Regarding how to reproduce the segmentation results presented in the paper, we discovered that different GPU types would generate different results. In our code, we carefully set the random seed, so the results should be consistent when trained multiple times on the same type of GPU. If the training does not give the same segmentation results as in the paper, it is recommended to adjust the learning rate. And, the type of GPU we used in this work is Tesla v100. Finaly, pre-training is very important for pure transformer models. In our experiments, both the encoder and decoder are initialized with pretrained weights rather than initializing the encoder with pretrained weights only.
+### セグメンテーション結果の再現について
+論文で報告されたセグメンテーション結果を再現するには、使用する GPU の種類によって結果が異なる場合があることがわかっています。
+本コードでは乱数シードを慎重に設定しており、同一種類の GPU 上であれば複数回の学習で一貫した結果が得られるはずです。
+もし論文の結果と異なる場合は、学習率の調整を推奨します。
+我々の実験では Tesla V100 を使用しています。
+また、純粋なトランスフォーマーモデルでは事前学習が非常に重要です。
+本研究では エンコーダとデコーダの両方に事前学習済み重みを適用しています（エンコーダのみに初期化するのではなく、デコーダも含めています）。
 
-## References
+## 参考リンク
 * [TransUnet](https://github.com/Beckschen/TransUNet)
 * [SwinTransformer](https://github.com/microsoft/Swin-Transformer)
 
