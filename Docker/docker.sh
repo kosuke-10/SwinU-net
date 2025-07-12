@@ -23,14 +23,8 @@ CONTAINER_NAME=yoshida_swinu-net${GPU_ID}
 HOST_DIR=/home/yoshida/Swin-Unet
 CONTAINER_DIR=/Swin-Unet
 
-# シンボリックリンクの代わりに一時ファイルを作成
-cp ../requirements.txt ./temp_requirements.txt
-
 # Dockerビルド
 docker build --force-rm -t ${IMAGE_NAME} .
-
-# 一時ファイルを削除
-rm -f ./temp_requirements.txt
 
 # コンテナ実行
 docker run --gpus "device=${GPU_ID}" \

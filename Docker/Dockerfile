@@ -31,25 +31,35 @@ RUN ln -sf /usr/local/cuda-11.8/lib64/libcusolver.so.11 /usr/local/cuda-11.8/lib
 
 # SwinU-net用のPython 3.7環境作成
 RUN conda create -n swinunet python=3.7 -y
-a
+
 # 作業ディレクトリを設定
 WORKDIR /Swin-Unet
 
-# 一時ファイルをコピー（docker.shで作成）
-COPY ./temp_requirements.txt /tmp/requirements.txt
+# バージョン指定のあるPyTorchをインストール
 RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate swinunet && \
-    pip install --no-cache-dir -r /tmp/requirements.txt"
+    pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
 
-# PyTorch 1.10.0をCUDA 11.3でインストール（SwinU-netの推奨バージョン）
+# 基本的なパッケージをグループごとにインストール - バージョン指定に注意
 RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate swinunet && \
-    pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html"
+    pip install 'numpy<1.23.0' 'scipy<1.8.0' h5py tqdm"
 
-# その他必要なライブラリをインストール
+# 可視化・ロギング関連
 RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate swinunet && \
-    pip install SimpleITK medpy"
+    pip install 'tensorboard<2.11.0' tensorboardX"
+
+# 医療画像処理関連 - バイナリインストール優先
+RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
+    conda activate swinunet && \
+    pip install --only-binary SimpleITK SimpleITK==2.0.2 && \
+    pip install medpy"
+
+# モデル関連
+RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
+    conda activate swinunet && \
+    pip install 'timm<0.6.0' 'einops<0.5.0' ml-collections"
 
 # キャッシュ削除で軽量化
 RUN conda clean -afy

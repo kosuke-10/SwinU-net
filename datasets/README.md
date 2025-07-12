@@ -1,9 +1,9 @@
-# Data Preparing
+# データ準備
 
-1. Access to the synapse multi-organ dataset:
-   1. Sign up in the [official Synapse website](https://www.synapse.org/#!Synapse:syn3193805/wiki/) and download the dataset. Convert them to numpy format, clip the images within [-125, 275], normalize each 3D image to [0, 1], and extract 2D slices from 3D volume for training cases while keeping the 3D volume in h5 format for testing cases.
-   2.  You can also send an Email directly to jienengchen01 AT gmail.com to request the preprocessed data for reproduction.
-2. The directory structure of the whole project is as follows:
+1. Synapse 多臓器データセットへのアクセス方法：
+   1. [公式 Synapse サイト](https://www.synapse.org/#!Synapse:syn3193805/wiki/) に登録し、データセットをダウンロードしてください。次の処理を行います：データを NumPy 形式に変換し、画像の値を [-125, 275] の範囲にクリップし、各3D画像を [0, 1] の範囲に正規化します。学習用には3Dボリュームから2Dスライスを抽出し、テスト用には3Dボリュームを h5 形式で保持します。
+   2. また、再現実験のための前処理済みデータを希望する場合は、jienengchen01 [アット] gmail.com にメールを送って直接リクエストすることも可能です。
+2. プロジェクト全体のディレクトリ構成は以下のとおりです：
 
 ```bash
 .

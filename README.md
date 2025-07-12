@@ -17,6 +17,8 @@
 - Synapse/BTCV: https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd  
 - ACDC: https://drive.google.com/drive/folders/1KQcrci7aKsYZi1hQoZ3T3QUtcy7b--n4
 
+
+
 ---
 
 ## 3. 実行環境 （修正版）
@@ -26,8 +28,8 @@ nvidia driver：524.105.17
 CUDA：11.0 ~ 11.8 （11.8使用）
 
 
-
 Python 3.7 の環境を準備してください。その後、以下のコマンドで依存ライブラリをインストールします：
+↓Dockerfileで直接読み込む形に変更
 
 ```bash
 pip install -r requirements.txt
@@ -37,6 +39,8 @@ pip install -r requirements.txt
 
 ## 4. 学習・テストの実行方法
 
+Synapseデータセットの使用
+
 - Synapse データセットで学習スクリプトを実行します。バッチサイズは 24 を推奨していますが、GPU メモリの制約がある場合は 12 や 6 に変更可能です。
 
 - Train
@@ -44,7 +48,7 @@ pip install -r requirements.txt
 ```bash
 sh train.sh 
 # または 
-python train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
+python3 train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
 ```
 
 - Test 
@@ -52,7 +56,7 @@ python train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lit
 ```bash
 sh test.sh 
 # or 
-python test.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --is_saveni --volume_path your DATA_DIR --output_dir your OUT_DIR --max_epoch 150 --base_lr 0.05 --img_size 224 --batch_size 24
+python3 test.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --is_saveni --volume_path your DATA_DIR --output_dir your OUT_DIR --max_epoch 150 --base_lr 0.05 --img_size 224 --batch_size 24
 ```
 
 ---
