@@ -17,7 +17,18 @@
 - Synapse/BTCV: https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd  
 - ACDC: https://drive.google.com/drive/folders/1KQcrci7aKsYZi1hQoZ3T3QUtcy7b--n4
 
+### make_dataset_txt.pyの設定
 
+1. **設定ファイルの修正**（Synapse用）:
+   ```python
+   # make_dataset_txt.py内のdatasets_configを以下に修正
+   datasets_config = {
+       'Synapse': {
+           'data_dir': 'datasets/Synapse/train_npz',
+           'num_classes': 9,  # Synapseは9クラス（0-8）
+           'predict_head': 0
+       },
+   }
 
 ---
 

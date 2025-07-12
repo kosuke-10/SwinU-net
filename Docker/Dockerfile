@@ -56,6 +56,12 @@ RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     pip install --only-binary SimpleITK SimpleITK==2.0.2 && \
     pip install medpy"
 
+# データ処理関連パッケージ
+RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
+    conda activate swinunet && \
+    pip install pandas 'scikit-learn<1.2.0'"
+
+
 # モデル関連
 RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate swinunet && \
