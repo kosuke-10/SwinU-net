@@ -49,3 +49,4 @@ nnUNet_results/
 *.npz
 *.npy
 *.h5
+*.gz

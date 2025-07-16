@@ -30,6 +30,10 @@
        },
    }
 
+```bash
+
+```
+
 ---
 
 ## 3. 実行環境 （修正版）
@@ -56,10 +60,21 @@ Synapseデータセットの使用
 
 - Train
 
+
+患者別の分割に対して
 ```bash
-sh train.sh 
-# または 
-python3 train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
+python3 train.py \
+    --dataset Synapse \
+    --cfg configs/swin_tiny_patch4_window7_224_lite.yaml \
+    --root_path datasets/Synapse \
+    --list_dir ./lists/Synapse \
+    --num_classes 9 \
+    --n_class 9 \
+    --max_epochs 150 \
+    --output_dir ./model_out \
+    --img_size 224 \
+    --base_lr 0.05 \
+    --batch_size 24
 ```
 
 - Test 

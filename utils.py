@@ -59,7 +59,20 @@ def calculate_metric_percase(pred, gt):
 
 
 def test_single_volume(image, label, net, classes, patch_size=[256, 256], test_save_path=None, case=None, z_spacing=1):
-    image, label = image.squeeze(0).cpu().detach().numpy().squeeze(0), label.squeeze(0).cpu().detach().numpy().squeeze(0)
+    # 修正：安全なテンソル→numpy変換
+    if isinstance(image, torch.Tensor):
+        image = image.cpu().detach().numpy()
+    if isinstance(label, torch.Tensor):
+        label = label.cpu().detach().numpy()
+    
+    # 修正：バッチ次元を安全に削除
+    while len(image.shape) > 3 and image.shape[0] == 1:
+        image = image.squeeze(0)
+    while len(label.shape) > 3 and label.shape[0] == 1:
+        label = label.squeeze(0)
+    
+    # この時点で image.shape = (D, H, W), label.shape = (D, H, W)
+    
     if len(image.shape) == 3:
         prediction = np.zeros_like(label)
         for ind in range(image.shape[0]):
@@ -85,6 +98,7 @@ def test_single_volume(image, label, net, classes, patch_size=[256, 256], test_s
         with torch.no_grad():
             out = torch.argmax(torch.softmax(net(input), dim=1), dim=1).squeeze(0)
             prediction = out.cpu().detach().numpy()
+    
     metric_list = []
     for i in range(1, classes):
         metric_list.append(calculate_metric_percase(prediction == i, label == i))
