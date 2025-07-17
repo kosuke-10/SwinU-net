@@ -81,7 +81,7 @@ if __name__ == "__main__":
     dataset_config = {
         args.dataset: {
             'root_path': args.root_path,
-            'list_dir': f'./lists/{args.dataset}',
+            'list_dir': args.list_dir,
             'num_classes': args.n_class,
         },
     }
