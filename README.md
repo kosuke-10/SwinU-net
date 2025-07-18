@@ -17,22 +17,9 @@
 - Synapse/BTCV: https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd  
 - ACDC: https://drive.google.com/drive/folders/1KQcrci7aKsYZi1hQoZ3T3QUtcy7b--n4
 
-### make_dataset_txt.pyの設定
 
-1. **設定ファイルの修正**（Synapse用）:
-   ```python
-   # make_dataset_txt.py内のdatasets_configを以下に修正
-   datasets_config = {
-       'Synapse': {
-           'data_dir': 'datasets/Synapse/train_npz',
-           'num_classes': 9,  # Synapseは9クラス（0-8）
-           'predict_head': 0
-       },
-   }
-
-```bash
-
-```
+細胞データセットをdatasetの内部に配置（名前はCellMix）
+元画像はRGB・ラベル画像はL形式である必要あり
 
 ---
 
@@ -42,48 +29,57 @@ GPU：NVIDIA RTX A5000 VRAM 24G
 nvidia driver：524.105.17
 CUDA：11.0 ~ 11.8 （11.8使用）
 
-
-Python 3.7 の環境を準備してください。その後、以下のコマンドで依存ライブラリをインストールします：
-↓Dockerfileで直接読み込む形に変更
-
+Dockerfileの実行でOK（内容を確認して適宜修正すること）
 ```bash
-pip install -r requirements.txt
+sh docker.sh サーバー番号
 ```
 
 ---
 
 ## 4. 学習・テストの実行方法
 
-Synapseデータセットの使用
-
-- Synapse データセットで学習スクリプトを実行します。バッチサイズは 24 を推奨していますが、GPU メモリの制約がある場合は 12 や 6 に変更可能です。
-
-- Train
-
-
-患者別の分割に対して
+### データ前処理
+データ分割の実行(通常)
 ```bash
-python3 train.py \
-    --dataset Synapse \
-    --cfg configs/swin_tiny_patch4_window7_224_lite.yaml \
-    --root_path datasets/Synapse \
-    --list_dir ./lists/Synapse \
-    --num_classes 9 \
-    --n_class 9 \
-    --max_epochs 150 \
-    --output_dir ./model_out \
-    --img_size 224 \
-    --base_lr 0.05 \
-    --batch_size 24
+cd dataset_preprocessing
+python3 make_dataset_cellmix.py
 ```
 
-- Test 
+交差検定を行う場合
+```bash
+cd dataset_preprocessing
+python3 make_dataset_cellmix_kfold.py
+```
+
+### 実験
+
+バッチサイズは24推奨・300
 
 ```bash
-sh test.sh 
-# or 
-python3 test.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --is_saveni --volume_path your DATA_DIR --output_dir your OUT_DIR --max_epoch 150 --base_lr 0.05 --img_size 224 --batch_size 24
+cd /home/yoshida/Swin-Unet
+
+# 最も簡単（対話式）
+python3 run_experiments.py
+
+# 動作確認（10エポック）
+python3 run_experiments.py --mode quick --epochs 10
+
+# 中規模実験（50エポック×5fold）
+python3 run_experiments.py --mode kfold-all --epochs 50
+
+# 本格実験（150エポック×5fold）
+python3 run_experiments.py --mode kfold-all --epochs 150
+
+# 高精度実験（200エポック×5fold）
+python3 run_experiments.py --mode kfold-all --epochs 200 --batch_size 24
+
+# 特定foldのみ長時間
+python3 run_experiments.py --mode kfold-full --fold 1 --epochs 300
+
+# アンサンブル作成
+python3 run_experiments.py --mode ensemble
 ```
+
 
 ---
 

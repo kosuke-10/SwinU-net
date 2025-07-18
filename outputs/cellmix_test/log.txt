@@ -1,0 +1,17 @@
+[11:41:17.137] Namespace(accumulation_steps=None, amp_opt_level='O1', base_lr=0.05, batch_size=8, cache_mode='part', cfg='configs/swin_tiny_patch4_window7_224_lite.yaml', dataset='CellMix', deterministic=1, eval=False, eval_interval=1, img_size=224, list_dir='lists/CellMix', max_epochs=5, max_iterations=30000, n_class=3, n_gpu=1, num_classes=3, num_workers=8, opts=None, output_dir='outputs/cellmix_test', resume=None, root_path='datasets/CellMix', seed=1234, tag=None, throughput=False, use_checkpoint=False, zip=False)
+[11:41:17.141] 32 iterations per epoch. 160 max iterations 
+[11:41:21.409] Train epoch: 0 : loss : 0.607229, loss_ce: 0.855478, loss_dice: 0.441730
+[11:41:23.448] Val epoch: 0 : loss : 0.462980, loss_ce: 0.627682, loss_dice: 0.353179
+[11:41:23.563] save model to outputs/cellmix_test/best_model.pth
+[11:41:27.712] Train epoch: 1 : loss : 0.433817, loss_ce: 0.616991, loss_dice: 0.311701
+[11:41:29.727] Val epoch: 1 : loss : 0.361160, loss_ce: 0.512621, loss_dice: 0.260186
+[11:41:30.232] save model to outputs/cellmix_test/best_model.pth
+[11:41:34.454] Train epoch: 2 : loss : 0.356193, loss_ce: 0.524499, loss_dice: 0.243989
+[11:41:36.455] Val epoch: 2 : loss : 0.281748, loss_ce: 0.418630, loss_dice: 0.190493
+[11:41:36.969] save model to outputs/cellmix_test/best_model.pth
+[11:41:41.128] Train epoch: 3 : loss : 0.317111, loss_ce: 0.471910, loss_dice: 0.213911
+[11:41:43.199] Val epoch: 3 : loss : 0.304997, loss_ce: 0.465307, loss_dice: 0.198123
+[11:41:43.320] save model to outputs/cellmix_test/last_model.pth
+[11:41:47.486] Train epoch: 4 : loss : 0.284116, loss_ce: 0.425910, loss_dice: 0.189587
+[11:41:49.531] Val epoch: 4 : loss : 0.285188, loss_ce: 0.427214, loss_dice: 0.190503
+[11:41:50.099] save model to outputs/cellmix_test/last_model.pth

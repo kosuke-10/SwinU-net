@@ -1,0 +1,9 @@
+K-fold Cross Validation Experiment
+========================================
+Timestamp: 2025-07-18 12:51:50
+Dataset: CellMix
+K-folds: 5
+Max epochs: 1000
+Batch size: 16
+Base LR: 0.05
+Config: configs/swin_tiny_patch4_window7_224_lite.yaml

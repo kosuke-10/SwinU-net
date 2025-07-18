@@ -1,0 +1,18 @@
+{
+  "channel_names": {
+    "0": "R",
+    "1": "G",
+    "2": "B"
+  },
+  "labels": {
+    "background": 0,
+    "nucleus": 1,
+    "cytoplasm": 2
+  },
+  "numTraining": 316,
+  "numTest": 78,
+  "file_ending": ".png",
+  "name": "Dataset705_CellMix",
+  "tensorImageSize": "2D",
+  "description": "This dataset was made by Tokushima University and is used for the U-Mamba project.."
+}
