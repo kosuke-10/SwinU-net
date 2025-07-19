@@ -61,11 +61,24 @@ RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate swinunet && \
     pip install pandas 'scikit-learn<1.2.0'"
 
+# 画像処理・可視化関連パッケージ（重要：ここを追加）
+RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
+    conda activate swinunet && \
+    pip install opencv-python-headless==4.5.5.64 \
+    matplotlib==3.5.3 \
+    Pillow==8.4.0 \
+    seaborn"
 
 # モデル関連
 RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate swinunet && \
     pip install 'timm<0.6.0' 'einops<0.5.0' ml-collections"
+
+# 統計・評価関連（追加）
+RUN /bin/bash -c "source /opt/conda/etc/profile.d/conda.sh && \
+    conda activate swinunet && \
+    pip install openpyxl xlsxwriter"
+
 
 # キャッシュ削除で軽量化
 RUN conda clean -afy

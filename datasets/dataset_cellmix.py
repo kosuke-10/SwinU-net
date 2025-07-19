@@ -94,10 +94,17 @@ class CellMixDataset(Dataset):
     def __getitem__(self, idx):
         case_name = self.sample_list[idx]
         
-        # CellMixのファイル名対応
-        # case_name: "cell_001" -> "cell_001_0000.png" (image), "cell_001.png" (label)
-        image_path = os.path.join(self.base_dir, 'imagesTr', f'{case_name}_0000.png')
-        label_path = os.path.join(self.base_dir, 'labelsTr', f'{case_name}.png')
+        # ✅ 修正：splitに応じてディレクトリを切り替え
+        if self.split == 'train':
+            # トレーニング用
+            image_path = os.path.join(self.base_dir, 'imagesTr', f'{case_name}_0000.png')
+            label_path = os.path.join(self.base_dir, 'labelsTr', f'{case_name}.png')
+        elif self.split == 'test':
+            # ✅ テスト用：imagesTs と labelsTs を使用
+            image_path = os.path.join(self.base_dir, 'imagesTs', f'{case_name}_0000.png')
+            label_path = os.path.join(self.base_dir, 'labelsTs', f'{case_name}.png')
+        else:
+            raise ValueError(f"Unknown split: {self.split}")
         
         # ファイル存在確認
         if not os.path.exists(image_path):

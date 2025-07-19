@@ -111,8 +111,9 @@ def show_menu():
     print("4. K-fold Single Fold Full (customizable epochs)")
     print("5. K-fold All Folds (customizable epochs)")
     print("6. Create Ensemble Model")
-    print("7. Analyze Results")
-    print("8. Custom Command")
+    print("7. Test Ensemble Model")
+    print("8. Analyze Results")
+    print("9. Custom Command")
     print("0. Exit")
     print("="*60)
 
@@ -159,6 +160,22 @@ def get_fold_number():
     else:
         fold = 1
     return fold
+
+def create_ensemble():
+    """アンサンブルモデル作成"""
+    cmd = [
+        'python3', 'src/experiments/create_ensemble.py'
+    ]
+    
+    return run_command(cmd, "Creating Ensemble Model")
+
+def test_ensemble():
+    """アンサンブルモデルテスト"""
+    cmd = [
+        'python3', 'src/experiments/test_ensemble.py'
+    ]
+    
+    return run_command(cmd, "Testing Ensemble Model")
 
 def interactive_mode():
     """対話式実行モード"""
@@ -233,10 +250,14 @@ def interactive_mode():
             create_ensemble()
             
         elif choice == '7':
+            print("\n🧪 Test Ensemble Model")
+            test_ensemble()
+            
+        elif choice == '8':
             print("\n📊 Analyze Results")
             analyze_results()
             
-        elif choice == '8':
+        elif choice == '9':
             print("\n📝 Custom Commands:")
             print("例: python3 src/train.py --dataset CellMix --max_epochs 50")
             cmd_str = input("コマンドを入力: ").strip()

@@ -5,10 +5,24 @@ import json
 import os
 from pathlib import Path
 import sys
+from datetime import datetime
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# ✅ 確実なパス設定
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(current_dir)
+src_dir = current_dir
+
+# プロジェクトルートをsys.pathに追加
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+# srcディレクトリをsys.pathに追加
+if src_dir not in sys.path:
+    sys.path.insert(0, src_dir)
+
+# インポート
 from networks.vision_transformer import SwinUnet as ViT_seg
-from src.config import get_config
+from config import get_config  # srcディレクトリから直接インポート
 
 class EnsembleModel(nn.Module):
     """K-fold trained modelsのアンサンブル推論"""
@@ -28,7 +42,7 @@ class EnsembleModel(nn.Module):
             if os.path.exists(model_path):
                 checkpoint = torch.load(model_path, map_location='cpu')
                 model.load_state_dict(checkpoint)
-                print(f"✅ Loaded fold {i+1} model: {model_path}")
+                print(f"✅ Loaded fold {i+1} model: {os.path.basename(model_path)}")
             else:
                 print(f"❌ Model not found: {model_path}")
                 raise FileNotFoundError(f"Model file not found: {model_path}")
@@ -53,39 +67,6 @@ class EnsembleModel(nn.Module):
         ensemble_output = torch.stack(outputs, dim=0).mean(dim=0)
         
         return ensemble_output
-    
-    def predict_single(self, x):
-        """単一画像の推論"""
-        self.eval()
-        with torch.no_grad():
-            if len(x.shape) == 3:  # (C, H, W) -> (1, C, H, W)
-                x = x.unsqueeze(0)
-            
-            output = self.forward(x)
-            prediction = torch.argmax(output, dim=1)
-            
-            return prediction.squeeze(), output.squeeze()
-    
-    def predict_with_uncertainty(self, x):
-        """不確実性付き推論"""
-        individual_outputs = []
-        
-        with torch.no_grad():
-            for model in self.models:
-                output = model(x)
-                output = torch.softmax(output, dim=1)
-                individual_outputs.append(output)
-        
-        # アンサンブル結果
-        ensemble_mean = torch.stack(individual_outputs, dim=0).mean(dim=0)
-        
-        # 不確実性（標準偏差）
-        ensemble_std = torch.stack(individual_outputs, dim=0).std(dim=0)
-        
-        # 予測ラベル
-        prediction = torch.argmax(ensemble_mean, dim=1)
-        
-        return prediction, ensemble_mean, ensemble_std
 
 def create_ensemble_from_kfold(experiment_dir, config_path=None):
     """K-fold実験からアンサンブルモデルを作成"""
@@ -127,6 +108,7 @@ def create_ensemble_from_kfold(experiment_dir, config_path=None):
     args.tag = None
     args.eval = False
     args.throughput = False
+    args.batch_size = None
     
     config = get_config(args)
     
@@ -140,8 +122,8 @@ def create_ensemble_from_kfold(experiment_dir, config_path=None):
     
     return ensemble_model, fold_model_paths
 
-def save_ensemble_model(experiment_dir, ensemble_model, fold_model_paths, config_info):
-    """アンサンブルモデルの保存"""
+def save_ensemble_model(experiment_dir, fold_model_paths):
+    """アンサンブルモデル情報の保存"""
     
     experiment_path = Path(experiment_dir)
     ensemble_dir = experiment_path / "ensemble_model"
@@ -171,20 +153,16 @@ def save_ensemble_model(experiment_dir, ensemble_model, fold_model_paths, config
     with open(ensemble_dir / "ensemble_config.json", 'w') as f:
         json.dump(ensemble_config, f, indent=2)
     
-    # 軽量なアンサンブル用重みファイル（実際はパス情報のみ）
+    # アンサンブル用重みファイル
     ensemble_weights = {
         "model_paths": fold_model_paths,
-        "weights": [1.0 / len(fold_model_paths)] * len(fold_model_paths),  # 均等重み
+        "weights": [1.0 / len(fold_model_paths)] * len(fold_model_paths),
         "ensemble_method": "weighted_average"
     }
     
     torch.save(ensemble_weights, ensemble_dir / "ensemble_weights.pth")
     
     print(f"💾 Ensemble model saved to: {ensemble_dir}")
-    print(f"📄 Model paths: {ensemble_dir / 'model_paths.json'}")
-    print(f"⚙️  Config: {ensemble_dir / 'ensemble_config.json'}")
-    print(f"🏋️  Weights: {ensemble_dir / 'ensemble_weights.pth'}")
-    
     return ensemble_dir
 
 def load_ensemble_model(ensemble_dir):

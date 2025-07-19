@@ -1,0 +1,7 @@
+K-fold Cross Validation Summary
+========================================
+Timestamp: 2025-07-18 18:27:10
+Total folds: 5
+Successful folds: [1, 2, 3, 4, 5]
+Failed folds: []
+Success rate: 5/5

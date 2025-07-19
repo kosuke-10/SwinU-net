@@ -1,0 +1,1202 @@
+[16:21:08.676] Namespace(accumulation_steps=None, amp_opt_level='O1', base_lr=0.05, batch_size=24, cache_mode='part', cfg='configs/swin_tiny_patch4_window7_224_lite.yaml', dataset='CellMix', deterministic=1, eval=False, eval_interval=1, img_size=224, list_dir='lists/CellMix_kfold/fold_3', max_epochs=400, max_iterations=30000, n_class=3, n_gpu=1, num_classes=3, num_workers=8, opts=None, output_dir='/Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3', resume=None, root_path='datasets/CellMix', seed=1234, tag=None, throughput=False, use_checkpoint=False, zip=False)
+[16:21:08.680] 9 iterations per epoch. 3600 max iterations 
+[16:21:13.763] Train epoch: 0 : loss : 0.716533, loss_ce: 0.995998, loss_dice: 0.530223
+[16:21:15.632] Val epoch: 0 : loss : 0.668686, loss_ce: 0.895115, loss_dice: 0.517734
+[16:21:15.756] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:19.423] Train epoch: 1 : loss : 0.607382, loss_ce: 0.838925, loss_dice: 0.453019
+[16:21:21.303] Val epoch: 1 : loss : 0.607823, loss_ce: 0.820684, loss_dice: 0.465915
+[16:21:21.890] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:25.571] Train epoch: 2 : loss : 0.694838, loss_ce: 0.991844, loss_dice: 0.496834
+[16:21:28.274] Val epoch: 2 : loss : 0.496719, loss_ce: 0.673673, loss_dice: 0.378749
+[16:21:28.748] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:32.515] Train epoch: 3 : loss : 0.518129, loss_ce: 0.744610, loss_dice: 0.367141
+[16:21:34.359] Val epoch: 3 : loss : 0.431190, loss_ce: 0.599336, loss_dice: 0.319092
+[16:21:34.895] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:38.514] Train epoch: 4 : loss : 0.457012, loss_ce: 0.657150, loss_dice: 0.323586
+[16:21:40.392] Val epoch: 4 : loss : 0.401479, loss_ce: 0.538441, loss_dice: 0.310172
+[16:21:40.970] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:44.905] Train epoch: 5 : loss : 0.419824, loss_ce: 0.586230, loss_dice: 0.308886
+[16:21:46.790] Val epoch: 5 : loss : 0.370550, loss_ce: 0.502161, loss_dice: 0.282809
+[16:21:47.324] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:51.174] Train epoch: 6 : loss : 0.401815, loss_ce: 0.571729, loss_dice: 0.288538
+[16:21:53.087] Val epoch: 6 : loss : 0.369222, loss_ce: 0.513898, loss_dice: 0.272771
+[16:21:53.609] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:21:57.435] Train epoch: 7 : loss : 0.385093, loss_ce: 0.553809, loss_dice: 0.272616
+[16:21:59.350] Val epoch: 7 : loss : 0.336699, loss_ce: 0.466443, loss_dice: 0.250203
+[16:21:59.859] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:03.452] Train epoch: 8 : loss : 0.375084, loss_ce: 0.542085, loss_dice: 0.263750
+[16:22:05.327] Val epoch: 8 : loss : 0.326130, loss_ce: 0.457526, loss_dice: 0.238532
+[16:22:05.845] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:09.627] Train epoch: 9 : loss : 0.339354, loss_ce: 0.498772, loss_dice: 0.233075
+[16:22:11.511] Val epoch: 9 : loss : 0.292346, loss_ce: 0.409325, loss_dice: 0.214359
+[16:22:12.003] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:15.726] Train epoch: 10 : loss : 0.323492, loss_ce: 0.489071, loss_dice: 0.213106
+[16:22:17.608] Val epoch: 10 : loss : 0.274281, loss_ce: 0.388753, loss_dice: 0.197966
+[16:22:18.101] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:21.912] Train epoch: 11 : loss : 0.305152, loss_ce: 0.461359, loss_dice: 0.201014
+[16:22:23.800] Val epoch: 11 : loss : 0.236364, loss_ce: 0.329635, loss_dice: 0.174184
+[16:22:24.328] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:27.988] Train epoch: 12 : loss : 0.273055, loss_ce: 0.412252, loss_dice: 0.180257
+[16:22:29.859] Val epoch: 12 : loss : 0.254562, loss_ce: 0.338794, loss_dice: 0.198408
+[16:22:29.971] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:22:33.939] Train epoch: 13 : loss : 0.305075, loss_ce: 0.450827, loss_dice: 0.207906
+[16:22:35.827] Val epoch: 13 : loss : 0.254194, loss_ce: 0.333460, loss_dice: 0.201350
+[16:22:36.393] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:22:40.113] Train epoch: 14 : loss : 0.291037, loss_ce: 0.425034, loss_dice: 0.201706
+[16:22:42.006] Val epoch: 14 : loss : 0.220842, loss_ce: 0.300829, loss_dice: 0.167518
+[16:22:42.528] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:46.222] Train epoch: 15 : loss : 0.268638, loss_ce: 0.401887, loss_dice: 0.179805
+[16:22:48.113] Val epoch: 15 : loss : 0.220352, loss_ce: 0.299983, loss_dice: 0.167265
+[16:22:48.628] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:52.543] Train epoch: 16 : loss : 0.247882, loss_ce: 0.374267, loss_dice: 0.163625
+[16:22:54.415] Val epoch: 16 : loss : 0.200003, loss_ce: 0.275451, loss_dice: 0.149704
+[16:22:54.960] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:22:58.842] Train epoch: 17 : loss : 0.232062, loss_ce: 0.349664, loss_dice: 0.153661
+[16:23:00.736] Val epoch: 17 : loss : 0.200197, loss_ce: 0.272801, loss_dice: 0.151794
+[16:23:01.255] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:23:05.094] Train epoch: 18 : loss : 0.215764, loss_ce: 0.322176, loss_dice: 0.144823
+[16:23:06.989] Val epoch: 18 : loss : 0.206997, loss_ce: 0.280867, loss_dice: 0.157750
+[16:23:07.498] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:23:11.560] Train epoch: 19 : loss : 0.216725, loss_ce: 0.326241, loss_dice: 0.143715
+[16:23:13.444] Val epoch: 19 : loss : 0.188128, loss_ce: 0.257252, loss_dice: 0.142046
+[16:23:13.971] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:23:17.904] Train epoch: 20 : loss : 0.203099, loss_ce: 0.303456, loss_dice: 0.136195
+[16:23:19.783] Val epoch: 20 : loss : 0.200368, loss_ce: 0.277960, loss_dice: 0.148640
+[16:23:20.377] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:23:23.946] Train epoch: 21 : loss : 0.220828, loss_ce: 0.330152, loss_dice: 0.147945
+[16:23:25.843] Val epoch: 21 : loss : 0.190963, loss_ce: 0.258951, loss_dice: 0.145638
+[16:23:26.357] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:23:29.982] Train epoch: 22 : loss : 0.208252, loss_ce: 0.310436, loss_dice: 0.140130
+[16:23:31.870] Val epoch: 22 : loss : 0.180901, loss_ce: 0.244318, loss_dice: 0.138623
+[16:23:32.373] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:23:36.128] Train epoch: 23 : loss : 0.196059, loss_ce: 0.293650, loss_dice: 0.130999
+[16:23:38.008] Val epoch: 23 : loss : 0.199394, loss_ce: 0.264908, loss_dice: 0.155719
+[16:23:38.515] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:23:42.326] Train epoch: 24 : loss : 0.213469, loss_ce: 0.320691, loss_dice: 0.141989
+[16:23:44.220] Val epoch: 24 : loss : 0.187655, loss_ce: 0.260563, loss_dice: 0.139049
+[16:23:44.723] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:23:48.317] Train epoch: 25 : loss : 0.208731, loss_ce: 0.316204, loss_dice: 0.137082
+[16:23:50.224] Val epoch: 25 : loss : 0.179342, loss_ce: 0.246326, loss_dice: 0.134686
+[16:23:50.717] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:23:54.497] Train epoch: 26 : loss : 0.207378, loss_ce: 0.311674, loss_dice: 0.137848
+[16:23:56.408] Val epoch: 26 : loss : 0.175508, loss_ce: 0.237251, loss_dice: 0.134346
+[16:23:56.961] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:24:01.120] Train epoch: 27 : loss : 0.187630, loss_ce: 0.279532, loss_dice: 0.126362
+[16:24:02.988] Val epoch: 27 : loss : 0.196998, loss_ce: 0.262452, loss_dice: 0.153362
+[16:24:03.466] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:24:07.260] Train epoch: 28 : loss : 0.187287, loss_ce: 0.281153, loss_dice: 0.124710
+[16:24:09.131] Val epoch: 28 : loss : 0.170015, loss_ce: 0.228717, loss_dice: 0.130880
+[16:24:09.673] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:24:13.534] Train epoch: 29 : loss : 0.181809, loss_ce: 0.270381, loss_dice: 0.122760
+[16:24:15.408] Val epoch: 29 : loss : 0.172236, loss_ce: 0.233227, loss_dice: 0.131576
+[16:24:15.910] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:24:20.060] Train epoch: 30 : loss : 0.179880, loss_ce: 0.267314, loss_dice: 0.121591
+[16:24:21.950] Val epoch: 30 : loss : 0.168180, loss_ce: 0.225735, loss_dice: 0.129809
+[16:24:22.471] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:24:26.176] Train epoch: 31 : loss : 0.191885, loss_ce: 0.286499, loss_dice: 0.128809
+[16:24:28.070] Val epoch: 31 : loss : 0.193585, loss_ce: 0.261412, loss_dice: 0.148366
+[16:24:28.576] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:24:32.192] Train epoch: 32 : loss : 0.181989, loss_ce: 0.270838, loss_dice: 0.122756
+[16:24:34.068] Val epoch: 32 : loss : 0.169529, loss_ce: 0.228504, loss_dice: 0.130212
+[16:24:34.596] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:24:38.198] Train epoch: 33 : loss : 0.176064, loss_ce: 0.264723, loss_dice: 0.116958
+[16:24:40.099] Val epoch: 33 : loss : 0.174610, loss_ce: 0.233025, loss_dice: 0.135667
+[16:24:40.662] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:24:44.519] Train epoch: 34 : loss : 0.171465, loss_ce: 0.254160, loss_dice: 0.116334
+[16:24:46.439] Val epoch: 34 : loss : 0.171045, loss_ce: 0.224179, loss_dice: 0.135623
+[16:24:46.968] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:24:50.710] Train epoch: 35 : loss : 0.168082, loss_ce: 0.247717, loss_dice: 0.114992
+[16:24:52.567] Val epoch: 35 : loss : 0.165744, loss_ce: 0.224365, loss_dice: 0.126664
+[16:24:53.151] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:24:56.913] Train epoch: 36 : loss : 0.169094, loss_ce: 0.250449, loss_dice: 0.114857
+[16:24:58.796] Val epoch: 36 : loss : 0.165931, loss_ce: 0.224654, loss_dice: 0.126782
+[16:24:59.289] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:03.025] Train epoch: 37 : loss : 0.175316, loss_ce: 0.261793, loss_dice: 0.117665
+[16:25:04.923] Val epoch: 37 : loss : 0.168405, loss_ce: 0.221177, loss_dice: 0.133224
+[16:25:05.399] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:08.999] Train epoch: 38 : loss : 0.166857, loss_ce: 0.248490, loss_dice: 0.112435
+[16:25:10.871] Val epoch: 38 : loss : 0.170617, loss_ce: 0.224497, loss_dice: 0.134697
+[16:25:11.398] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:15.126] Train epoch: 39 : loss : 0.162220, loss_ce: 0.239289, loss_dice: 0.110841
+[16:25:17.000] Val epoch: 39 : loss : 0.171018, loss_ce: 0.225770, loss_dice: 0.134517
+[16:25:17.513] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:21.341] Train epoch: 40 : loss : 0.171565, loss_ce: 0.256160, loss_dice: 0.115169
+[16:25:23.206] Val epoch: 40 : loss : 0.166555, loss_ce: 0.219263, loss_dice: 0.131416
+[16:25:23.723] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:27.899] Train epoch: 41 : loss : 0.165407, loss_ce: 0.241982, loss_dice: 0.114357
+[16:25:29.781] Val epoch: 41 : loss : 0.176412, loss_ce: 0.231071, loss_dice: 0.139972
+[16:25:30.290] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:33.869] Train epoch: 42 : loss : 0.174954, loss_ce: 0.257105, loss_dice: 0.120187
+[16:25:35.771] Val epoch: 42 : loss : 0.168600, loss_ce: 0.227906, loss_dice: 0.129064
+[16:25:36.259] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:40.023] Train epoch: 43 : loss : 0.171722, loss_ce: 0.255263, loss_dice: 0.116029
+[16:25:41.907] Val epoch: 43 : loss : 0.165750, loss_ce: 0.225507, loss_dice: 0.125911
+[16:25:42.449] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:46.474] Train epoch: 44 : loss : 0.177303, loss_ce: 0.266055, loss_dice: 0.118134
+[16:25:48.391] Val epoch: 44 : loss : 0.165267, loss_ce: 0.224001, loss_dice: 0.126110
+[16:25:48.937] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:25:52.645] Train epoch: 45 : loss : 0.181402, loss_ce: 0.270187, loss_dice: 0.122212
+[16:25:54.524] Val epoch: 45 : loss : 0.171727, loss_ce: 0.235877, loss_dice: 0.128960
+[16:25:55.034] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:25:58.699] Train epoch: 46 : loss : 0.172424, loss_ce: 0.257908, loss_dice: 0.115435
+[16:26:00.558] Val epoch: 46 : loss : 0.162340, loss_ce: 0.214784, loss_dice: 0.127378
+[16:26:01.079] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:26:04.790] Train epoch: 47 : loss : 0.165264, loss_ce: 0.246156, loss_dice: 0.111337
+[16:26:06.669] Val epoch: 47 : loss : 0.159483, loss_ce: 0.211270, loss_dice: 0.124958
+[16:26:07.189] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:26:10.611] Train epoch: 48 : loss : 0.155317, loss_ce: 0.229231, loss_dice: 0.106042
+[16:26:12.471] Val epoch: 48 : loss : 0.157472, loss_ce: 0.208263, loss_dice: 0.123611
+[16:26:12.999] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:26:16.536] Train epoch: 49 : loss : 0.155894, loss_ce: 0.230280, loss_dice: 0.106304
+[16:26:18.430] Val epoch: 49 : loss : 0.169525, loss_ce: 0.223731, loss_dice: 0.133388
+[16:26:18.983] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:26:22.944] Train epoch: 50 : loss : 0.157254, loss_ce: 0.233691, loss_dice: 0.106296
+[16:26:24.809] Val epoch: 50 : loss : 0.167356, loss_ce: 0.220704, loss_dice: 0.131790
+[16:26:25.326] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:26:29.024] Train epoch: 51 : loss : 0.165460, loss_ce: 0.246017, loss_dice: 0.111756
+[16:26:30.901] Val epoch: 51 : loss : 0.169006, loss_ce: 0.222149, loss_dice: 0.133577
+[16:26:31.390] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:26:35.656] Train epoch: 52 : loss : 0.161939, loss_ce: 0.240278, loss_dice: 0.109714
+[16:26:37.540] Val epoch: 52 : loss : 0.158865, loss_ce: 0.210939, loss_dice: 0.124149
+[16:26:38.106] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:26:41.575] Train epoch: 53 : loss : 0.158878, loss_ce: 0.233947, loss_dice: 0.108832
+[16:26:43.422] Val epoch: 53 : loss : 0.163841, loss_ce: 0.215819, loss_dice: 0.129188
+[16:26:43.946] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:26:47.847] Train epoch: 54 : loss : 0.160453, loss_ce: 0.237587, loss_dice: 0.109029
+[16:26:49.736] Val epoch: 54 : loss : 0.163271, loss_ce: 0.212998, loss_dice: 0.130119
+[16:26:50.211] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:26:53.983] Train epoch: 55 : loss : 0.154737, loss_ce: 0.229266, loss_dice: 0.105052
+[16:26:55.853] Val epoch: 55 : loss : 0.151872, loss_ce: 0.201401, loss_dice: 0.118853
+[16:26:56.371] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:27:00.227] Train epoch: 56 : loss : 0.151292, loss_ce: 0.225082, loss_dice: 0.102099
+[16:27:02.113] Val epoch: 56 : loss : 0.153785, loss_ce: 0.204594, loss_dice: 0.119912
+[16:27:02.623] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:06.357] Train epoch: 57 : loss : 0.150814, loss_ce: 0.221075, loss_dice: 0.103974
+[16:27:08.226] Val epoch: 57 : loss : 0.156603, loss_ce: 0.210614, loss_dice: 0.120595
+[16:27:08.804] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:12.867] Train epoch: 58 : loss : 0.149921, loss_ce: 0.221574, loss_dice: 0.102153
+[16:27:14.757] Val epoch: 58 : loss : 0.156243, loss_ce: 0.211294, loss_dice: 0.119543
+[16:27:15.247] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:19.088] Train epoch: 59 : loss : 0.145381, loss_ce: 0.212759, loss_dice: 0.100463
+[16:27:20.962] Val epoch: 59 : loss : 0.152484, loss_ce: 0.202401, loss_dice: 0.119205
+[16:27:21.501] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:25.255] Train epoch: 60 : loss : 0.146933, loss_ce: 0.217288, loss_dice: 0.100030
+[16:27:27.154] Val epoch: 60 : loss : 0.155959, loss_ce: 0.210345, loss_dice: 0.119702
+[16:27:27.693] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:31.390] Train epoch: 61 : loss : 0.152590, loss_ce: 0.225568, loss_dice: 0.103938
+[16:27:33.284] Val epoch: 61 : loss : 0.153993, loss_ce: 0.203019, loss_dice: 0.121308
+[16:27:33.836] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:37.363] Train epoch: 62 : loss : 0.153729, loss_ce: 0.226921, loss_dice: 0.104934
+[16:27:39.233] Val epoch: 62 : loss : 0.152064, loss_ce: 0.198833, loss_dice: 0.120884
+[16:27:39.722] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:43.554] Train epoch: 63 : loss : 0.149502, loss_ce: 0.220390, loss_dice: 0.102243
+[16:27:45.443] Val epoch: 63 : loss : 0.158312, loss_ce: 0.211954, loss_dice: 0.122550
+[16:27:45.956] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:49.537] Train epoch: 64 : loss : 0.148325, loss_ce: 0.217362, loss_dice: 0.102301
+[16:27:51.438] Val epoch: 64 : loss : 0.154607, loss_ce: 0.203308, loss_dice: 0.122140
+[16:27:51.911] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:27:55.439] Train epoch: 65 : loss : 0.150083, loss_ce: 0.220949, loss_dice: 0.102838
+[16:27:57.331] Val epoch: 65 : loss : 0.154780, loss_ce: 0.205071, loss_dice: 0.121252
+[16:27:57.861] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:01.671] Train epoch: 66 : loss : 0.147608, loss_ce: 0.217827, loss_dice: 0.100795
+[16:28:03.568] Val epoch: 66 : loss : 0.156135, loss_ce: 0.205409, loss_dice: 0.123286
+[16:28:04.073] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:07.779] Train epoch: 67 : loss : 0.150482, loss_ce: 0.221156, loss_dice: 0.103366
+[16:28:09.646] Val epoch: 67 : loss : 0.154092, loss_ce: 0.204316, loss_dice: 0.120609
+[16:28:10.172] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:13.962] Train epoch: 68 : loss : 0.146039, loss_ce: 0.214009, loss_dice: 0.100726
+[16:28:15.881] Val epoch: 68 : loss : 0.151449, loss_ce: 0.203489, loss_dice: 0.116756
+[16:28:16.414] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:28:20.052] Train epoch: 69 : loss : 0.147461, loss_ce: 0.217514, loss_dice: 0.100759
+[16:28:21.948] Val epoch: 69 : loss : 0.148716, loss_ce: 0.197041, loss_dice: 0.116499
+[16:28:22.488] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:28:26.100] Train epoch: 70 : loss : 0.145336, loss_ce: 0.213843, loss_dice: 0.099666
+[16:28:27.952] Val epoch: 70 : loss : 0.152247, loss_ce: 0.205990, loss_dice: 0.116418
+[16:28:28.487] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:32.152] Train epoch: 71 : loss : 0.148352, loss_ce: 0.218408, loss_dice: 0.101648
+[16:28:34.026] Val epoch: 71 : loss : 0.152986, loss_ce: 0.206645, loss_dice: 0.117213
+[16:28:34.525] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:38.237] Train epoch: 72 : loss : 0.143404, loss_ce: 0.211496, loss_dice: 0.098008
+[16:28:40.093] Val epoch: 72 : loss : 0.153901, loss_ce: 0.209274, loss_dice: 0.116987
+[16:28:40.596] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:44.437] Train epoch: 73 : loss : 0.146699, loss_ce: 0.217104, loss_dice: 0.099763
+[16:28:46.320] Val epoch: 73 : loss : 0.149573, loss_ce: 0.200388, loss_dice: 0.115695
+[16:28:46.794] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:50.997] Train epoch: 74 : loss : 0.146782, loss_ce: 0.215006, loss_dice: 0.101300
+[16:28:52.867] Val epoch: 74 : loss : 0.155102, loss_ce: 0.213414, loss_dice: 0.116226
+[16:28:53.427] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:28:57.265] Train epoch: 75 : loss : 0.148826, loss_ce: 0.220739, loss_dice: 0.100884
+[16:28:59.126] Val epoch: 75 : loss : 0.151637, loss_ce: 0.204331, loss_dice: 0.116507
+[16:28:59.630] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:29:03.223] Train epoch: 76 : loss : 0.148402, loss_ce: 0.218775, loss_dice: 0.101486
+[16:29:05.128] Val epoch: 76 : loss : 0.151494, loss_ce: 0.199627, loss_dice: 0.119405
+[16:29:05.599] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:29:09.370] Train epoch: 77 : loss : 0.144512, loss_ce: 0.213206, loss_dice: 0.098715
+[16:29:11.241] Val epoch: 77 : loss : 0.149039, loss_ce: 0.197384, loss_dice: 0.116809
+[16:29:11.778] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:29:15.795] Train epoch: 78 : loss : 0.138802, loss_ce: 0.205304, loss_dice: 0.094467
+[16:29:17.652] Val epoch: 78 : loss : 0.146271, loss_ce: 0.194160, loss_dice: 0.114346
+[16:29:18.156] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:29:21.799] Train epoch: 79 : loss : 0.138064, loss_ce: 0.202880, loss_dice: 0.094854
+[16:29:23.693] Val epoch: 79 : loss : 0.147248, loss_ce: 0.194427, loss_dice: 0.115795
+[16:29:24.203] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:29:28.050] Train epoch: 80 : loss : 0.138405, loss_ce: 0.204639, loss_dice: 0.094249
+[16:29:29.932] Val epoch: 80 : loss : 0.147494, loss_ce: 0.196254, loss_dice: 0.114987
+[16:29:30.482] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:29:34.087] Train epoch: 81 : loss : 0.132254, loss_ce: 0.195512, loss_dice: 0.090082
+[16:29:35.964] Val epoch: 81 : loss : 0.144734, loss_ce: 0.191886, loss_dice: 0.113299
+[16:29:36.487] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:29:40.236] Train epoch: 82 : loss : 0.133067, loss_ce: 0.194769, loss_dice: 0.091933
+[16:29:42.106] Val epoch: 82 : loss : 0.144408, loss_ce: 0.191858, loss_dice: 0.112775
+[16:29:42.627] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:29:46.342] Train epoch: 83 : loss : 0.135523, loss_ce: 0.199605, loss_dice: 0.092801
+[16:29:48.216] Val epoch: 83 : loss : 0.141014, loss_ce: 0.190262, loss_dice: 0.108182
+[16:29:48.725] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:29:52.379] Train epoch: 84 : loss : 0.131085, loss_ce: 0.192761, loss_dice: 0.089967
+[16:29:54.270] Val epoch: 84 : loss : 0.142478, loss_ce: 0.189012, loss_dice: 0.111455
+[16:29:54.821] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:29:58.348] Train epoch: 85 : loss : 0.147641, loss_ce: 0.219416, loss_dice: 0.099792
+[16:30:00.224] Val epoch: 85 : loss : 0.153502, loss_ce: 0.208234, loss_dice: 0.117013
+[16:30:00.734] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:04.710] Train epoch: 86 : loss : 0.152244, loss_ce: 0.228918, loss_dice: 0.101128
+[16:30:06.564] Val epoch: 86 : loss : 0.151407, loss_ce: 0.199788, loss_dice: 0.119154
+[16:30:07.061] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:10.837] Train epoch: 87 : loss : 0.161992, loss_ce: 0.247199, loss_dice: 0.105187
+[16:30:12.749] Val epoch: 87 : loss : 0.162517, loss_ce: 0.223974, loss_dice: 0.121546
+[16:30:13.318] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:17.036] Train epoch: 88 : loss : 0.165849, loss_ce: 0.250891, loss_dice: 0.109155
+[16:30:18.908] Val epoch: 88 : loss : 0.152368, loss_ce: 0.206760, loss_dice: 0.116107
+[16:30:19.473] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:23.592] Train epoch: 89 : loss : 0.161628, loss_ce: 0.244082, loss_dice: 0.106658
+[16:30:25.463] Val epoch: 89 : loss : 0.158020, loss_ce: 0.209519, loss_dice: 0.123687
+[16:30:26.009] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:29.724] Train epoch: 90 : loss : 0.152671, loss_ce: 0.228077, loss_dice: 0.102401
+[16:30:31.607] Val epoch: 90 : loss : 0.149892, loss_ce: 0.199022, loss_dice: 0.117139
+[16:30:32.166] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:36.118] Train epoch: 91 : loss : 0.147338, loss_ce: 0.221240, loss_dice: 0.098069
+[16:30:37.995] Val epoch: 91 : loss : 0.145021, loss_ce: 0.193945, loss_dice: 0.112404
+[16:30:38.565] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:42.142] Train epoch: 92 : loss : 0.143360, loss_ce: 0.210229, loss_dice: 0.098782
+[16:30:44.023] Val epoch: 92 : loss : 0.146085, loss_ce: 0.194929, loss_dice: 0.113523
+[16:30:44.557] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:48.225] Train epoch: 93 : loss : 0.136238, loss_ce: 0.201527, loss_dice: 0.092713
+[16:30:50.137] Val epoch: 93 : loss : 0.145649, loss_ce: 0.196514, loss_dice: 0.111740
+[16:30:50.693] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:30:54.636] Train epoch: 94 : loss : 0.138665, loss_ce: 0.205587, loss_dice: 0.094051
+[16:30:56.506] Val epoch: 94 : loss : 0.141327, loss_ce: 0.187567, loss_dice: 0.110501
+[16:30:57.043] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:00.719] Train epoch: 95 : loss : 0.130789, loss_ce: 0.194702, loss_dice: 0.088180
+[16:31:02.593] Val epoch: 95 : loss : 0.141898, loss_ce: 0.187443, loss_dice: 0.111534
+[16:31:03.128] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:06.888] Train epoch: 96 : loss : 0.132264, loss_ce: 0.194844, loss_dice: 0.090544
+[16:31:08.780] Val epoch: 96 : loss : 0.141046, loss_ce: 0.188323, loss_dice: 0.109529
+[16:31:09.309] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:13.018] Train epoch: 97 : loss : 0.131032, loss_ce: 0.193670, loss_dice: 0.089273
+[16:31:14.883] Val epoch: 97 : loss : 0.141624, loss_ce: 0.190845, loss_dice: 0.108810
+[16:31:15.408] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:19.220] Train epoch: 98 : loss : 0.130959, loss_ce: 0.192555, loss_dice: 0.089895
+[16:31:21.147] Val epoch: 98 : loss : 0.143818, loss_ce: 0.194594, loss_dice: 0.109967
+[16:31:21.646] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:25.821] Train epoch: 99 : loss : 0.132062, loss_ce: 0.194634, loss_dice: 0.090347
+[16:31:27.699] Val epoch: 99 : loss : 0.141648, loss_ce: 0.189594, loss_dice: 0.109684
+[16:31:28.246] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:31.783] Train epoch: 100 : loss : 0.132423, loss_ce: 0.196000, loss_dice: 0.090039
+[16:31:33.638] Val epoch: 100 : loss : 0.143926, loss_ce: 0.193942, loss_dice: 0.110583
+[16:31:34.160] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:37.789] Train epoch: 101 : loss : 0.128242, loss_ce: 0.190059, loss_dice: 0.087030
+[16:31:39.640] Val epoch: 101 : loss : 0.141344, loss_ce: 0.187559, loss_dice: 0.110534
+[16:31:40.139] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:43.773] Train epoch: 102 : loss : 0.127164, loss_ce: 0.186482, loss_dice: 0.087619
+[16:31:45.631] Val epoch: 102 : loss : 0.138351, loss_ce: 0.183576, loss_dice: 0.108201
+[16:31:46.152] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:31:49.851] Train epoch: 103 : loss : 0.129248, loss_ce: 0.190995, loss_dice: 0.088083
+[16:31:51.720] Val epoch: 103 : loss : 0.141369, loss_ce: 0.187781, loss_dice: 0.110427
+[16:31:52.236] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:31:56.284] Train epoch: 104 : loss : 0.128306, loss_ce: 0.190630, loss_dice: 0.086756
+[16:31:58.164] Val epoch: 104 : loss : 0.142997, loss_ce: 0.188356, loss_dice: 0.112758
+[16:31:58.682] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:02.536] Train epoch: 105 : loss : 0.133119, loss_ce: 0.197545, loss_dice: 0.090168
+[16:32:04.423] Val epoch: 105 : loss : 0.140555, loss_ce: 0.186578, loss_dice: 0.109873
+[16:32:04.902] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:08.781] Train epoch: 106 : loss : 0.134792, loss_ce: 0.201203, loss_dice: 0.090517
+[16:32:10.661] Val epoch: 106 : loss : 0.148027, loss_ce: 0.199632, loss_dice: 0.113623
+[16:32:11.220] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:14.939] Train epoch: 107 : loss : 0.136386, loss_ce: 0.203846, loss_dice: 0.091412
+[16:32:16.836] Val epoch: 107 : loss : 0.137893, loss_ce: 0.184048, loss_dice: 0.107123
+[16:32:17.338] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:32:21.371] Train epoch: 108 : loss : 0.132130, loss_ce: 0.195350, loss_dice: 0.089984
+[16:32:23.251] Val epoch: 108 : loss : 0.144172, loss_ce: 0.192880, loss_dice: 0.111699
+[16:32:23.796] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:27.309] Train epoch: 109 : loss : 0.125611, loss_ce: 0.185493, loss_dice: 0.085690
+[16:32:29.209] Val epoch: 109 : loss : 0.141425, loss_ce: 0.189604, loss_dice: 0.109306
+[16:32:29.734] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:33.312] Train epoch: 110 : loss : 0.129782, loss_ce: 0.191790, loss_dice: 0.088444
+[16:32:35.213] Val epoch: 110 : loss : 0.139849, loss_ce: 0.187275, loss_dice: 0.108231
+[16:32:35.753] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:39.444] Train epoch: 111 : loss : 0.128222, loss_ce: 0.190842, loss_dice: 0.086476
+[16:32:41.326] Val epoch: 111 : loss : 0.138080, loss_ce: 0.186043, loss_dice: 0.106105
+[16:32:41.901] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:45.481] Train epoch: 112 : loss : 0.125721, loss_ce: 0.185693, loss_dice: 0.085741
+[16:32:47.368] Val epoch: 112 : loss : 0.135408, loss_ce: 0.183081, loss_dice: 0.103626
+[16:32:47.904] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:32:51.920] Train epoch: 113 : loss : 0.122846, loss_ce: 0.180792, loss_dice: 0.084215
+[16:32:53.817] Val epoch: 113 : loss : 0.137886, loss_ce: 0.184660, loss_dice: 0.106704
+[16:32:54.356] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:32:58.302] Train epoch: 114 : loss : 0.118855, loss_ce: 0.175101, loss_dice: 0.081358
+[16:33:00.178] Val epoch: 114 : loss : 0.137145, loss_ce: 0.183397, loss_dice: 0.106311
+[16:33:00.745] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:04.483] Train epoch: 115 : loss : 0.122076, loss_ce: 0.179814, loss_dice: 0.083585
+[16:33:06.363] Val epoch: 115 : loss : 0.137247, loss_ce: 0.184858, loss_dice: 0.105507
+[16:33:06.947] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:10.853] Train epoch: 116 : loss : 0.122758, loss_ce: 0.180272, loss_dice: 0.084416
+[16:33:12.734] Val epoch: 116 : loss : 0.140236, loss_ce: 0.186638, loss_dice: 0.109302
+[16:33:13.254] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:17.134] Train epoch: 117 : loss : 0.123967, loss_ce: 0.182713, loss_dice: 0.084802
+[16:33:19.008] Val epoch: 117 : loss : 0.138974, loss_ce: 0.185555, loss_dice: 0.107919
+[16:33:19.562] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:23.189] Train epoch: 118 : loss : 0.120121, loss_ce: 0.177836, loss_dice: 0.081645
+[16:33:25.052] Val epoch: 118 : loss : 0.137372, loss_ce: 0.185126, loss_dice: 0.105535
+[16:33:25.587] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:29.738] Train epoch: 119 : loss : 0.122438, loss_ce: 0.181525, loss_dice: 0.083047
+[16:33:31.604] Val epoch: 119 : loss : 0.136252, loss_ce: 0.182650, loss_dice: 0.105320
+[16:33:32.131] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:35.686] Train epoch: 120 : loss : 0.119992, loss_ce: 0.178046, loss_dice: 0.081289
+[16:33:37.571] Val epoch: 120 : loss : 0.137805, loss_ce: 0.185315, loss_dice: 0.106132
+[16:33:38.104] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:42.221] Train epoch: 121 : loss : 0.122397, loss_ce: 0.182306, loss_dice: 0.082457
+[16:33:44.077] Val epoch: 121 : loss : 0.142479, loss_ce: 0.189911, loss_dice: 0.110858
+[16:33:44.594] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:48.131] Train epoch: 122 : loss : 0.134627, loss_ce: 0.199902, loss_dice: 0.091110
+[16:33:49.992] Val epoch: 122 : loss : 0.157504, loss_ce: 0.208410, loss_dice: 0.123567
+[16:33:50.536] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:33:54.308] Train epoch: 123 : loss : 0.148841, loss_ce: 0.221998, loss_dice: 0.100069
+[16:33:56.199] Val epoch: 123 : loss : 0.150010, loss_ce: 0.201306, loss_dice: 0.115813
+[16:33:56.737] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:00.741] Train epoch: 124 : loss : 0.143764, loss_ce: 0.216078, loss_dice: 0.095554
+[16:34:02.651] Val epoch: 124 : loss : 0.139257, loss_ce: 0.184272, loss_dice: 0.109246
+[16:34:03.144] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:06.960] Train epoch: 125 : loss : 0.128409, loss_ce: 0.189332, loss_dice: 0.087793
+[16:34:08.860] Val epoch: 125 : loss : 0.143125, loss_ce: 0.193816, loss_dice: 0.109331
+[16:34:09.379] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:13.272] Train epoch: 126 : loss : 0.125947, loss_ce: 0.187342, loss_dice: 0.085018
+[16:34:15.185] Val epoch: 126 : loss : 0.137962, loss_ce: 0.183641, loss_dice: 0.107509
+[16:34:15.725] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:19.512] Train epoch: 127 : loss : 0.125654, loss_ce: 0.184406, loss_dice: 0.086486
+[16:34:21.412] Val epoch: 127 : loss : 0.136961, loss_ce: 0.180530, loss_dice: 0.107915
+[16:34:21.934] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:25.707] Train epoch: 128 : loss : 0.121795, loss_ce: 0.178984, loss_dice: 0.083669
+[16:34:27.584] Val epoch: 128 : loss : 0.137319, loss_ce: 0.184265, loss_dice: 0.106022
+[16:34:28.090] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:31.620] Train epoch: 129 : loss : 0.118312, loss_ce: 0.174592, loss_dice: 0.080792
+[16:34:33.510] Val epoch: 129 : loss : 0.135814, loss_ce: 0.183037, loss_dice: 0.104332
+[16:34:34.044] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:37.668] Train epoch: 130 : loss : 0.120907, loss_ce: 0.179717, loss_dice: 0.081700
+[16:34:39.552] Val epoch: 130 : loss : 0.140637, loss_ce: 0.188385, loss_dice: 0.108804
+[16:34:40.072] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:43.816] Train epoch: 131 : loss : 0.122658, loss_ce: 0.182470, loss_dice: 0.082784
+[16:34:45.691] Val epoch: 131 : loss : 0.136174, loss_ce: 0.181099, loss_dice: 0.106224
+[16:34:46.245] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:49.823] Train epoch: 132 : loss : 0.122990, loss_ce: 0.182606, loss_dice: 0.083247
+[16:34:51.734] Val epoch: 132 : loss : 0.136976, loss_ce: 0.184272, loss_dice: 0.105445
+[16:34:52.232] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:34:55.924] Train epoch: 133 : loss : 0.121932, loss_ce: 0.180055, loss_dice: 0.083182
+[16:34:57.855] Val epoch: 133 : loss : 0.138916, loss_ce: 0.187122, loss_dice: 0.106779
+[16:34:58.354] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:02.150] Train epoch: 134 : loss : 0.127292, loss_ce: 0.189645, loss_dice: 0.085724
+[16:35:04.031] Val epoch: 134 : loss : 0.143876, loss_ce: 0.196313, loss_dice: 0.108918
+[16:35:04.550] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:08.403] Train epoch: 135 : loss : 0.135885, loss_ce: 0.204926, loss_dice: 0.089858
+[16:35:10.276] Val epoch: 135 : loss : 0.137043, loss_ce: 0.181608, loss_dice: 0.107334
+[16:35:10.834] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:14.779] Train epoch: 136 : loss : 0.123318, loss_ce: 0.183049, loss_dice: 0.083498
+[16:35:16.655] Val epoch: 136 : loss : 0.140479, loss_ce: 0.185962, loss_dice: 0.110158
+[16:35:17.186] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:20.846] Train epoch: 137 : loss : 0.120141, loss_ce: 0.177040, loss_dice: 0.082207
+[16:35:22.709] Val epoch: 137 : loss : 0.139723, loss_ce: 0.184040, loss_dice: 0.110179
+[16:35:23.214] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:27.004] Train epoch: 138 : loss : 0.117154, loss_ce: 0.173211, loss_dice: 0.079783
+[16:35:28.886] Val epoch: 138 : loss : 0.137526, loss_ce: 0.184082, loss_dice: 0.106489
+[16:35:29.375] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:32.972] Train epoch: 139 : loss : 0.117331, loss_ce: 0.173597, loss_dice: 0.079821
+[16:35:34.822] Val epoch: 139 : loss : 0.139684, loss_ce: 0.186605, loss_dice: 0.108403
+[16:35:35.365] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:39.122] Train epoch: 140 : loss : 0.119630, loss_ce: 0.177059, loss_dice: 0.081344
+[16:35:41.004] Val epoch: 140 : loss : 0.136139, loss_ce: 0.180060, loss_dice: 0.106859
+[16:35:41.538] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:45.149] Train epoch: 141 : loss : 0.117754, loss_ce: 0.173433, loss_dice: 0.080635
+[16:35:47.012] Val epoch: 141 : loss : 0.140968, loss_ce: 0.185070, loss_dice: 0.111567
+[16:35:47.544] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:35:51.579] Train epoch: 142 : loss : 0.118963, loss_ce: 0.174971, loss_dice: 0.081624
+[16:35:53.468] Val epoch: 142 : loss : 0.134647, loss_ce: 0.180339, loss_dice: 0.104186
+[16:35:54.000] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:35:57.799] Train epoch: 143 : loss : 0.120277, loss_ce: 0.178978, loss_dice: 0.081143
+[16:35:59.665] Val epoch: 143 : loss : 0.136833, loss_ce: 0.184190, loss_dice: 0.105262
+[16:36:00.220] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:03.952] Train epoch: 144 : loss : 0.115987, loss_ce: 0.171402, loss_dice: 0.079043
+[16:36:05.819] Val epoch: 144 : loss : 0.133806, loss_ce: 0.179006, loss_dice: 0.103672
+[16:36:06.395] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:36:09.919] Train epoch: 145 : loss : 0.116478, loss_ce: 0.172581, loss_dice: 0.079076
+[16:36:11.804] Val epoch: 145 : loss : 0.136830, loss_ce: 0.183148, loss_dice: 0.105951
+[16:36:12.340] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:16.015] Train epoch: 146 : loss : 0.115710, loss_ce: 0.171494, loss_dice: 0.078521
+[16:36:17.878] Val epoch: 146 : loss : 0.133212, loss_ce: 0.178121, loss_dice: 0.103272
+[16:36:18.426] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:36:21.983] Train epoch: 147 : loss : 0.114873, loss_ce: 0.169394, loss_dice: 0.078526
+[16:36:23.848] Val epoch: 147 : loss : 0.134197, loss_ce: 0.181022, loss_dice: 0.102980
+[16:36:24.394] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:28.166] Train epoch: 148 : loss : 0.116245, loss_ce: 0.172479, loss_dice: 0.078756
+[16:36:30.057] Val epoch: 148 : loss : 0.134784, loss_ce: 0.181379, loss_dice: 0.103721
+[16:36:30.631] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:34.269] Train epoch: 149 : loss : 0.113775, loss_ce: 0.167209, loss_dice: 0.078153
+[16:36:36.151] Val epoch: 149 : loss : 0.135487, loss_ce: 0.179676, loss_dice: 0.106028
+[16:36:36.681] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:40.300] Train epoch: 150 : loss : 0.114513, loss_ce: 0.169623, loss_dice: 0.077774
+[16:36:42.195] Val epoch: 150 : loss : 0.132185, loss_ce: 0.177639, loss_dice: 0.101882
+[16:36:42.716] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:36:46.811] Train epoch: 151 : loss : 0.113718, loss_ce: 0.168559, loss_dice: 0.077157
+[16:36:48.705] Val epoch: 151 : loss : 0.133209, loss_ce: 0.178269, loss_dice: 0.103168
+[16:36:49.239] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:53.052] Train epoch: 152 : loss : 0.116338, loss_ce: 0.171178, loss_dice: 0.079779
+[16:36:54.946] Val epoch: 152 : loss : 0.133658, loss_ce: 0.178677, loss_dice: 0.103645
+[16:36:55.475] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:36:59.298] Train epoch: 153 : loss : 0.115895, loss_ce: 0.170615, loss_dice: 0.079416
+[16:37:01.191] Val epoch: 153 : loss : 0.138072, loss_ce: 0.185221, loss_dice: 0.106639
+[16:37:01.742] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:05.779] Train epoch: 154 : loss : 0.121779, loss_ce: 0.180440, loss_dice: 0.082672
+[16:37:07.644] Val epoch: 154 : loss : 0.143754, loss_ce: 0.191610, loss_dice: 0.111850
+[16:37:08.167] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:11.926] Train epoch: 155 : loss : 0.117895, loss_ce: 0.174504, loss_dice: 0.080155
+[16:37:13.800] Val epoch: 155 : loss : 0.138090, loss_ce: 0.184011, loss_dice: 0.107475
+[16:37:14.308] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:18.232] Train epoch: 156 : loss : 0.115380, loss_ce: 0.170310, loss_dice: 0.078760
+[16:37:20.138] Val epoch: 156 : loss : 0.137625, loss_ce: 0.185569, loss_dice: 0.105662
+[16:37:20.656] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:24.272] Train epoch: 157 : loss : 0.115432, loss_ce: 0.170143, loss_dice: 0.078958
+[16:37:26.174] Val epoch: 157 : loss : 0.133485, loss_ce: 0.178827, loss_dice: 0.103258
+[16:37:26.713] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:30.632] Train epoch: 158 : loss : 0.117534, loss_ce: 0.173582, loss_dice: 0.080169
+[16:37:32.485] Val epoch: 158 : loss : 0.136727, loss_ce: 0.185664, loss_dice: 0.104103
+[16:37:33.009] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:36.856] Train epoch: 159 : loss : 0.115879, loss_ce: 0.172009, loss_dice: 0.078459
+[16:37:38.762] Val epoch: 159 : loss : 0.136821, loss_ce: 0.184460, loss_dice: 0.105062
+[16:37:39.309] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:42.830] Train epoch: 160 : loss : 0.112505, loss_ce: 0.165654, loss_dice: 0.077073
+[16:37:44.698] Val epoch: 160 : loss : 0.133467, loss_ce: 0.181965, loss_dice: 0.101135
+[16:37:45.259] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:49.508] Train epoch: 161 : loss : 0.113402, loss_ce: 0.168125, loss_dice: 0.076920
+[16:37:51.371] Val epoch: 161 : loss : 0.133435, loss_ce: 0.179825, loss_dice: 0.102509
+[16:37:51.903] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:37:56.299] Train epoch: 162 : loss : 0.114953, loss_ce: 0.169373, loss_dice: 0.078673
+[16:37:58.173] Val epoch: 162 : loss : 0.134545, loss_ce: 0.180592, loss_dice: 0.103847
+[16:37:58.693] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:02.396] Train epoch: 163 : loss : 0.115489, loss_ce: 0.169030, loss_dice: 0.079796
+[16:38:04.259] Val epoch: 163 : loss : 0.135297, loss_ce: 0.181338, loss_dice: 0.104603
+[16:38:04.763] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:08.371] Train epoch: 164 : loss : 0.126438, loss_ce: 0.189242, loss_dice: 0.084569
+[16:38:10.274] Val epoch: 164 : loss : 0.132259, loss_ce: 0.176263, loss_dice: 0.102923
+[16:38:10.798] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:14.756] Train epoch: 165 : loss : 0.119898, loss_ce: 0.176794, loss_dice: 0.081966
+[16:38:16.632] Val epoch: 165 : loss : 0.134323, loss_ce: 0.180009, loss_dice: 0.103866
+[16:38:17.143] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:21.384] Train epoch: 166 : loss : 0.113266, loss_ce: 0.168149, loss_dice: 0.076677
+[16:38:23.258] Val epoch: 166 : loss : 0.137276, loss_ce: 0.183911, loss_dice: 0.106186
+[16:38:23.813] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:27.544] Train epoch: 167 : loss : 0.112128, loss_ce: 0.165798, loss_dice: 0.076347
+[16:38:29.458] Val epoch: 167 : loss : 0.132572, loss_ce: 0.177818, loss_dice: 0.102409
+[16:38:29.974] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:33.808] Train epoch: 168 : loss : 0.111754, loss_ce: 0.165102, loss_dice: 0.076189
+[16:38:35.713] Val epoch: 168 : loss : 0.136435, loss_ce: 0.187554, loss_dice: 0.102356
+[16:38:36.238] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:39.931] Train epoch: 169 : loss : 0.110046, loss_ce: 0.163024, loss_dice: 0.074728
+[16:38:41.810] Val epoch: 169 : loss : 0.137202, loss_ce: 0.183618, loss_dice: 0.106258
+[16:38:42.334] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:46.813] Train epoch: 170 : loss : 0.113118, loss_ce: 0.166572, loss_dice: 0.077482
+[16:38:48.692] Val epoch: 170 : loss : 0.133985, loss_ce: 0.177467, loss_dice: 0.104998
+[16:38:49.264] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:38:53.258] Train epoch: 171 : loss : 0.116011, loss_ce: 0.171193, loss_dice: 0.079222
+[16:38:55.162] Val epoch: 171 : loss : 0.130840, loss_ce: 0.175955, loss_dice: 0.100762
+[16:38:55.678] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:38:59.240] Train epoch: 172 : loss : 0.109632, loss_ce: 0.161715, loss_dice: 0.074909
+[16:39:01.141] Val epoch: 172 : loss : 0.135552, loss_ce: 0.184829, loss_dice: 0.102701
+[16:39:01.654] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:05.552] Train epoch: 173 : loss : 0.112210, loss_ce: 0.164602, loss_dice: 0.077281
+[16:39:07.441] Val epoch: 173 : loss : 0.133730, loss_ce: 0.180227, loss_dice: 0.102732
+[16:39:07.954] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:12.367] Train epoch: 174 : loss : 0.114601, loss_ce: 0.169653, loss_dice: 0.077900
+[16:39:14.231] Val epoch: 174 : loss : 0.137539, loss_ce: 0.185827, loss_dice: 0.105347
+[16:39:14.747] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:18.520] Train epoch: 175 : loss : 0.112193, loss_ce: 0.165115, loss_dice: 0.076912
+[16:39:20.392] Val epoch: 175 : loss : 0.137708, loss_ce: 0.184853, loss_dice: 0.106278
+[16:39:20.914] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:24.650] Train epoch: 176 : loss : 0.110784, loss_ce: 0.162425, loss_dice: 0.076356
+[16:39:26.566] Val epoch: 176 : loss : 0.139068, loss_ce: 0.185935, loss_dice: 0.107824
+[16:39:27.082] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:30.713] Train epoch: 177 : loss : 0.112501, loss_ce: 0.166322, loss_dice: 0.076620
+[16:39:32.647] Val epoch: 177 : loss : 0.133906, loss_ce: 0.180347, loss_dice: 0.102945
+[16:39:33.190] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:36.659] Train epoch: 178 : loss : 0.110712, loss_ce: 0.162507, loss_dice: 0.076182
+[16:39:38.535] Val epoch: 178 : loss : 0.135761, loss_ce: 0.183164, loss_dice: 0.104160
+[16:39:39.081] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:43.075] Train epoch: 179 : loss : 0.111412, loss_ce: 0.163939, loss_dice: 0.076394
+[16:39:44.952] Val epoch: 179 : loss : 0.138545, loss_ce: 0.188340, loss_dice: 0.105349
+[16:39:45.474] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:49.482] Train epoch: 180 : loss : 0.117307, loss_ce: 0.172997, loss_dice: 0.080180
+[16:39:51.355] Val epoch: 180 : loss : 0.138420, loss_ce: 0.187881, loss_dice: 0.105445
+[16:39:51.929] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:39:55.697] Train epoch: 181 : loss : 0.115385, loss_ce: 0.171133, loss_dice: 0.078220
+[16:39:57.615] Val epoch: 181 : loss : 0.136293, loss_ce: 0.183591, loss_dice: 0.104761
+[16:39:58.123] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:02.047] Train epoch: 182 : loss : 0.120987, loss_ce: 0.181103, loss_dice: 0.080910
+[16:40:03.927] Val epoch: 182 : loss : 0.136525, loss_ce: 0.182811, loss_dice: 0.105668
+[16:40:04.502] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:08.199] Train epoch: 183 : loss : 0.113590, loss_ce: 0.167961, loss_dice: 0.077343
+[16:40:10.047] Val epoch: 183 : loss : 0.143403, loss_ce: 0.192804, loss_dice: 0.110470
+[16:40:10.594] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:14.135] Train epoch: 184 : loss : 0.110847, loss_ce: 0.163878, loss_dice: 0.075493
+[16:40:16.002] Val epoch: 184 : loss : 0.136538, loss_ce: 0.185296, loss_dice: 0.104032
+[16:40:16.540] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:20.204] Train epoch: 185 : loss : 0.112482, loss_ce: 0.165796, loss_dice: 0.076939
+[16:40:22.099] Val epoch: 185 : loss : 0.134065, loss_ce: 0.180154, loss_dice: 0.103339
+[16:40:22.635] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:26.532] Train epoch: 186 : loss : 0.110936, loss_ce: 0.161180, loss_dice: 0.077440
+[16:40:28.405] Val epoch: 186 : loss : 0.138937, loss_ce: 0.188082, loss_dice: 0.106174
+[16:40:28.927] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:32.423] Train epoch: 187 : loss : 0.111421, loss_ce: 0.164986, loss_dice: 0.075711
+[16:40:34.303] Val epoch: 187 : loss : 0.134532, loss_ce: 0.181225, loss_dice: 0.103404
+[16:40:34.837] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:38.500] Train epoch: 188 : loss : 0.111801, loss_ce: 0.165802, loss_dice: 0.075801
+[16:40:40.392] Val epoch: 188 : loss : 0.139644, loss_ce: 0.186699, loss_dice: 0.108274
+[16:40:40.914] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:44.652] Train epoch: 189 : loss : 0.112546, loss_ce: 0.166655, loss_dice: 0.076473
+[16:40:46.538] Val epoch: 189 : loss : 0.133030, loss_ce: 0.177896, loss_dice: 0.103120
+[16:40:47.061] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:50.655] Train epoch: 190 : loss : 0.111229, loss_ce: 0.164385, loss_dice: 0.075791
+[16:40:52.514] Val epoch: 190 : loss : 0.136900, loss_ce: 0.183964, loss_dice: 0.105524
+[16:40:53.084] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:40:56.869] Train epoch: 191 : loss : 0.112692, loss_ce: 0.166853, loss_dice: 0.076584
+[16:40:58.761] Val epoch: 191 : loss : 0.136776, loss_ce: 0.183474, loss_dice: 0.105644
+[16:40:59.302] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:02.904] Train epoch: 192 : loss : 0.114067, loss_ce: 0.169009, loss_dice: 0.077439
+[16:41:04.774] Val epoch: 192 : loss : 0.139758, loss_ce: 0.186533, loss_dice: 0.108574
+[16:41:05.362] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:09.207] Train epoch: 193 : loss : 0.118967, loss_ce: 0.179090, loss_dice: 0.078885
+[16:41:11.094] Val epoch: 193 : loss : 0.135128, loss_ce: 0.182465, loss_dice: 0.103571
+[16:41:11.639] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:15.602] Train epoch: 194 : loss : 0.110790, loss_ce: 0.164111, loss_dice: 0.075242
+[16:41:17.505] Val epoch: 194 : loss : 0.134663, loss_ce: 0.182356, loss_dice: 0.102868
+[16:41:18.025] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:21.652] Train epoch: 195 : loss : 0.111633, loss_ce: 0.165611, loss_dice: 0.075648
+[16:41:23.539] Val epoch: 195 : loss : 0.135479, loss_ce: 0.184818, loss_dice: 0.102587
+[16:41:24.085] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:28.003] Train epoch: 196 : loss : 0.109566, loss_ce: 0.162283, loss_dice: 0.074421
+[16:41:29.887] Val epoch: 196 : loss : 0.134306, loss_ce: 0.181167, loss_dice: 0.103065
+[16:41:30.398] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:34.285] Train epoch: 197 : loss : 0.113420, loss_ce: 0.169076, loss_dice: 0.076317
+[16:41:36.185] Val epoch: 197 : loss : 0.131733, loss_ce: 0.176192, loss_dice: 0.102094
+[16:41:36.712] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:40.628] Train epoch: 198 : loss : 0.110792, loss_ce: 0.163367, loss_dice: 0.075742
+[16:41:42.507] Val epoch: 198 : loss : 0.134385, loss_ce: 0.179989, loss_dice: 0.103982
+[16:41:43.044] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:46.811] Train epoch: 199 : loss : 0.108181, loss_ce: 0.159641, loss_dice: 0.073874
+[16:41:48.700] Val epoch: 199 : loss : 0.133461, loss_ce: 0.179279, loss_dice: 0.102916
+[16:41:49.256] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:52.960] Train epoch: 200 : loss : 0.107239, loss_ce: 0.157571, loss_dice: 0.073685
+[16:41:54.850] Val epoch: 200 : loss : 0.135881, loss_ce: 0.182923, loss_dice: 0.104520
+[16:41:55.390] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:41:58.940] Train epoch: 201 : loss : 0.107004, loss_ce: 0.156476, loss_dice: 0.074022
+[16:42:00.816] Val epoch: 201 : loss : 0.133286, loss_ce: 0.178244, loss_dice: 0.103314
+[16:42:01.358] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:05.303] Train epoch: 202 : loss : 0.107318, loss_ce: 0.157352, loss_dice: 0.073962
+[16:42:07.190] Val epoch: 202 : loss : 0.132269, loss_ce: 0.177176, loss_dice: 0.102332
+[16:42:07.739] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:11.527] Train epoch: 203 : loss : 0.106963, loss_ce: 0.156558, loss_dice: 0.073900
+[16:42:13.418] Val epoch: 203 : loss : 0.133705, loss_ce: 0.179508, loss_dice: 0.103170
+[16:42:14.005] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:17.819] Train epoch: 204 : loss : 0.106658, loss_ce: 0.157800, loss_dice: 0.072563
+[16:42:19.679] Val epoch: 204 : loss : 0.131416, loss_ce: 0.176401, loss_dice: 0.101426
+[16:42:20.217] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:24.063] Train epoch: 205 : loss : 0.107464, loss_ce: 0.158284, loss_dice: 0.073584
+[16:42:25.968] Val epoch: 205 : loss : 0.135279, loss_ce: 0.180642, loss_dice: 0.105036
+[16:42:26.528] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:30.130] Train epoch: 206 : loss : 0.106095, loss_ce: 0.155855, loss_dice: 0.072922
+[16:42:32.001] Val epoch: 206 : loss : 0.132409, loss_ce: 0.177790, loss_dice: 0.102155
+[16:42:32.592] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:36.420] Train epoch: 207 : loss : 0.107295, loss_ce: 0.157765, loss_dice: 0.073649
+[16:42:38.300] Val epoch: 207 : loss : 0.132684, loss_ce: 0.180406, loss_dice: 0.100870
+[16:42:38.850] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:42.665] Train epoch: 208 : loss : 0.107641, loss_ce: 0.159317, loss_dice: 0.073191
+[16:42:44.600] Val epoch: 208 : loss : 0.131045, loss_ce: 0.177999, loss_dice: 0.099742
+[16:42:45.132] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:48.920] Train epoch: 209 : loss : 0.105509, loss_ce: 0.154230, loss_dice: 0.073028
+[16:42:50.793] Val epoch: 209 : loss : 0.134038, loss_ce: 0.180248, loss_dice: 0.103232
+[16:42:51.348] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:42:55.149] Train epoch: 210 : loss : 0.105012, loss_ce: 0.154407, loss_dice: 0.072082
+[16:42:57.050] Val epoch: 210 : loss : 0.131563, loss_ce: 0.176600, loss_dice: 0.101538
+[16:42:57.592] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:01.743] Train epoch: 211 : loss : 0.105297, loss_ce: 0.155083, loss_dice: 0.072107
+[16:43:03.628] Val epoch: 211 : loss : 0.133005, loss_ce: 0.178336, loss_dice: 0.102785
+[16:43:04.146] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:07.649] Train epoch: 212 : loss : 0.104738, loss_ce: 0.154052, loss_dice: 0.071862
+[16:43:09.527] Val epoch: 212 : loss : 0.131085, loss_ce: 0.176826, loss_dice: 0.100591
+[16:43:10.109] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:14.017] Train epoch: 213 : loss : 0.102106, loss_ce: 0.149996, loss_dice: 0.070180
+[16:43:15.928] Val epoch: 213 : loss : 0.130590, loss_ce: 0.174592, loss_dice: 0.101254
+[16:43:16.446] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:43:20.125] Train epoch: 214 : loss : 0.103305, loss_ce: 0.152710, loss_dice: 0.070368
+[16:43:21.979] Val epoch: 214 : loss : 0.133817, loss_ce: 0.180027, loss_dice: 0.103011
+[16:43:22.506] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:26.232] Train epoch: 215 : loss : 0.105276, loss_ce: 0.155534, loss_dice: 0.071771
+[16:43:28.118] Val epoch: 215 : loss : 0.130074, loss_ce: 0.175414, loss_dice: 0.099847
+[16:43:28.638] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:43:32.274] Train epoch: 216 : loss : 0.105922, loss_ce: 0.155259, loss_dice: 0.073031
+[16:43:34.133] Val epoch: 216 : loss : 0.132794, loss_ce: 0.179335, loss_dice: 0.101766
+[16:43:34.675] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:38.579] Train epoch: 217 : loss : 0.104129, loss_ce: 0.153108, loss_dice: 0.071476
+[16:43:40.486] Val epoch: 217 : loss : 0.131985, loss_ce: 0.177410, loss_dice: 0.101702
+[16:43:41.026] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:44.916] Train epoch: 218 : loss : 0.102661, loss_ce: 0.151136, loss_dice: 0.070345
+[16:43:46.800] Val epoch: 218 : loss : 0.132418, loss_ce: 0.177369, loss_dice: 0.102450
+[16:43:47.387] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:51.068] Train epoch: 219 : loss : 0.103748, loss_ce: 0.152506, loss_dice: 0.071243
+[16:43:52.947] Val epoch: 219 : loss : 0.134333, loss_ce: 0.179887, loss_dice: 0.103963
+[16:43:53.474] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:43:57.411] Train epoch: 220 : loss : 0.103326, loss_ce: 0.152519, loss_dice: 0.070530
+[16:43:59.259] Val epoch: 220 : loss : 0.131823, loss_ce: 0.176101, loss_dice: 0.102304
+[16:43:59.795] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:03.814] Train epoch: 221 : loss : 0.104423, loss_ce: 0.154000, loss_dice: 0.071372
+[16:44:05.673] Val epoch: 221 : loss : 0.133497, loss_ce: 0.179007, loss_dice: 0.103156
+[16:44:06.188] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:09.989] Train epoch: 222 : loss : 0.106446, loss_ce: 0.157111, loss_dice: 0.072669
+[16:44:11.856] Val epoch: 222 : loss : 0.132794, loss_ce: 0.177751, loss_dice: 0.102822
+[16:44:12.380] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:16.186] Train epoch: 223 : loss : 0.101724, loss_ce: 0.149321, loss_dice: 0.069993
+[16:44:18.090] Val epoch: 223 : loss : 0.135525, loss_ce: 0.182098, loss_dice: 0.104476
+[16:44:18.622] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:22.508] Train epoch: 224 : loss : 0.105436, loss_ce: 0.155837, loss_dice: 0.071835
+[16:44:24.356] Val epoch: 224 : loss : 0.136967, loss_ce: 0.184342, loss_dice: 0.105384
+[16:44:24.872] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:28.683] Train epoch: 225 : loss : 0.102630, loss_ce: 0.151046, loss_dice: 0.070353
+[16:44:30.580] Val epoch: 225 : loss : 0.133675, loss_ce: 0.182685, loss_dice: 0.101001
+[16:44:31.154] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:35.041] Train epoch: 226 : loss : 0.104559, loss_ce: 0.154230, loss_dice: 0.071445
+[16:44:36.918] Val epoch: 226 : loss : 0.134635, loss_ce: 0.181310, loss_dice: 0.103518
+[16:44:37.450] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:41.094] Train epoch: 227 : loss : 0.103687, loss_ce: 0.152834, loss_dice: 0.070921
+[16:44:42.957] Val epoch: 227 : loss : 0.134428, loss_ce: 0.182261, loss_dice: 0.102540
+[16:44:43.500] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:47.259] Train epoch: 228 : loss : 0.103508, loss_ce: 0.152899, loss_dice: 0.070581
+[16:44:49.148] Val epoch: 228 : loss : 0.134263, loss_ce: 0.180728, loss_dice: 0.103287
+[16:44:49.668] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:53.379] Train epoch: 229 : loss : 0.106771, loss_ce: 0.158242, loss_dice: 0.072458
+[16:44:55.262] Val epoch: 229 : loss : 0.133212, loss_ce: 0.178254, loss_dice: 0.103184
+[16:44:55.785] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:44:59.336] Train epoch: 230 : loss : 0.105804, loss_ce: 0.155972, loss_dice: 0.072358
+[16:45:01.237] Val epoch: 230 : loss : 0.129707, loss_ce: 0.173621, loss_dice: 0.100431
+[16:45:01.789] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:45:05.409] Train epoch: 231 : loss : 0.102909, loss_ce: 0.151863, loss_dice: 0.070272
+[16:45:07.279] Val epoch: 231 : loss : 0.131797, loss_ce: 0.176844, loss_dice: 0.101766
+[16:45:07.835] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:11.399] Train epoch: 232 : loss : 0.101653, loss_ce: 0.148827, loss_dice: 0.070203
+[16:45:13.290] Val epoch: 232 : loss : 0.132876, loss_ce: 0.179110, loss_dice: 0.102053
+[16:45:13.873] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:17.650] Train epoch: 233 : loss : 0.103633, loss_ce: 0.152628, loss_dice: 0.070969
+[16:45:19.501] Val epoch: 233 : loss : 0.134067, loss_ce: 0.182365, loss_dice: 0.101869
+[16:45:20.020] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:23.898] Train epoch: 234 : loss : 0.103064, loss_ce: 0.151040, loss_dice: 0.071080
+[16:45:25.782] Val epoch: 234 : loss : 0.131043, loss_ce: 0.175664, loss_dice: 0.101295
+[16:45:26.279] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:30.038] Train epoch: 235 : loss : 0.104959, loss_ce: 0.154909, loss_dice: 0.071660
+[16:45:31.903] Val epoch: 235 : loss : 0.131738, loss_ce: 0.176215, loss_dice: 0.102086
+[16:45:32.416] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:36.002] Train epoch: 236 : loss : 0.100719, loss_ce: 0.148098, loss_dice: 0.069133
+[16:45:37.882] Val epoch: 236 : loss : 0.131952, loss_ce: 0.176796, loss_dice: 0.102055
+[16:45:38.407] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:42.499] Train epoch: 237 : loss : 0.101901, loss_ce: 0.149247, loss_dice: 0.070337
+[16:45:44.392] Val epoch: 237 : loss : 0.132664, loss_ce: 0.177015, loss_dice: 0.103097
+[16:45:44.919] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:48.468] Train epoch: 238 : loss : 0.101742, loss_ce: 0.149117, loss_dice: 0.070159
+[16:45:50.349] Val epoch: 238 : loss : 0.130496, loss_ce: 0.175765, loss_dice: 0.100317
+[16:45:50.910] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:45:54.422] Train epoch: 239 : loss : 0.102447, loss_ce: 0.151288, loss_dice: 0.069887
+[16:45:56.316] Val epoch: 239 : loss : 0.130082, loss_ce: 0.175630, loss_dice: 0.099716
+[16:45:56.824] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:00.580] Train epoch: 240 : loss : 0.102794, loss_ce: 0.150625, loss_dice: 0.070907
+[16:46:02.494] Val epoch: 240 : loss : 0.130063, loss_ce: 0.174685, loss_dice: 0.100315
+[16:46:03.027] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:06.806] Train epoch: 241 : loss : 0.100511, loss_ce: 0.147910, loss_dice: 0.068912
+[16:46:08.686] Val epoch: 241 : loss : 0.131094, loss_ce: 0.175273, loss_dice: 0.101641
+[16:46:09.203] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:12.883] Train epoch: 242 : loss : 0.100855, loss_ce: 0.148955, loss_dice: 0.068789
+[16:46:14.748] Val epoch: 242 : loss : 0.132126, loss_ce: 0.178528, loss_dice: 0.101192
+[16:46:15.273] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:19.070] Train epoch: 243 : loss : 0.102305, loss_ce: 0.150754, loss_dice: 0.070007
+[16:46:20.955] Val epoch: 243 : loss : 0.131597, loss_ce: 0.176838, loss_dice: 0.101436
+[16:46:21.581] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:25.427] Train epoch: 244 : loss : 0.100671, loss_ce: 0.147677, loss_dice: 0.069334
+[16:46:27.299] Val epoch: 244 : loss : 0.130424, loss_ce: 0.176119, loss_dice: 0.099960
+[16:46:27.822] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:31.806] Train epoch: 245 : loss : 0.104600, loss_ce: 0.153761, loss_dice: 0.071825
+[16:46:33.694] Val epoch: 245 : loss : 0.131903, loss_ce: 0.179342, loss_dice: 0.100276
+[16:46:34.192] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:38.028] Train epoch: 246 : loss : 0.099990, loss_ce: 0.146761, loss_dice: 0.068810
+[16:46:39.931] Val epoch: 246 : loss : 0.134309, loss_ce: 0.181560, loss_dice: 0.102807
+[16:46:40.506] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:44.207] Train epoch: 247 : loss : 0.105340, loss_ce: 0.154124, loss_dice: 0.072817
+[16:46:46.090] Val epoch: 247 : loss : 0.134099, loss_ce: 0.182091, loss_dice: 0.102104
+[16:46:46.644] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:50.682] Train epoch: 248 : loss : 0.102119, loss_ce: 0.150491, loss_dice: 0.069871
+[16:46:52.572] Val epoch: 248 : loss : 0.134771, loss_ce: 0.180707, loss_dice: 0.104148
+[16:46:53.100] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:46:56.685] Train epoch: 249 : loss : 0.102277, loss_ce: 0.150333, loss_dice: 0.070239
+[16:46:58.546] Val epoch: 249 : loss : 0.131867, loss_ce: 0.177688, loss_dice: 0.101320
+[16:46:59.092] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:02.896] Train epoch: 250 : loss : 0.099607, loss_ce: 0.146478, loss_dice: 0.068360
+[16:47:04.788] Val epoch: 250 : loss : 0.133320, loss_ce: 0.179732, loss_dice: 0.102379
+[16:47:05.323] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:09.024] Train epoch: 251 : loss : 0.100411, loss_ce: 0.146645, loss_dice: 0.069588
+[16:47:10.906] Val epoch: 251 : loss : 0.133445, loss_ce: 0.180613, loss_dice: 0.102000
+[16:47:11.442] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:15.192] Train epoch: 252 : loss : 0.103131, loss_ce: 0.151424, loss_dice: 0.070936
+[16:47:17.067] Val epoch: 252 : loss : 0.133927, loss_ce: 0.180112, loss_dice: 0.103137
+[16:47:17.702] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:21.432] Train epoch: 253 : loss : 0.102860, loss_ce: 0.149014, loss_dice: 0.072090
+[16:47:23.323] Val epoch: 253 : loss : 0.134577, loss_ce: 0.182911, loss_dice: 0.102355
+[16:47:23.868] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:27.421] Train epoch: 254 : loss : 0.100931, loss_ce: 0.147918, loss_dice: 0.069606
+[16:47:29.328] Val epoch: 254 : loss : 0.132980, loss_ce: 0.179444, loss_dice: 0.102004
+[16:47:29.910] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:33.705] Train epoch: 255 : loss : 0.099621, loss_ce: 0.146291, loss_dice: 0.068507
+[16:47:35.608] Val epoch: 255 : loss : 0.131422, loss_ce: 0.177983, loss_dice: 0.100381
+[16:47:36.146] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:39.918] Train epoch: 256 : loss : 0.099010, loss_ce: 0.145921, loss_dice: 0.067735
+[16:47:41.822] Val epoch: 256 : loss : 0.131375, loss_ce: 0.178364, loss_dice: 0.100049
+[16:47:42.354] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:46.437] Train epoch: 257 : loss : 0.099842, loss_ce: 0.147263, loss_dice: 0.068228
+[16:47:48.309] Val epoch: 257 : loss : 0.133546, loss_ce: 0.181770, loss_dice: 0.101396
+[16:47:48.875] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:52.493] Train epoch: 258 : loss : 0.100149, loss_ce: 0.146908, loss_dice: 0.068977
+[16:47:54.391] Val epoch: 258 : loss : 0.131180, loss_ce: 0.176467, loss_dice: 0.100989
+[16:47:54.964] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:47:58.712] Train epoch: 259 : loss : 0.098423, loss_ce: 0.144082, loss_dice: 0.067984
+[16:48:00.601] Val epoch: 259 : loss : 0.131835, loss_ce: 0.178622, loss_dice: 0.100644
+[16:48:01.133] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:04.666] Train epoch: 260 : loss : 0.101685, loss_ce: 0.150705, loss_dice: 0.069005
+[16:48:06.544] Val epoch: 260 : loss : 0.138680, loss_ce: 0.187526, loss_dice: 0.106116
+[16:48:07.064] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:10.610] Train epoch: 261 : loss : 0.100374, loss_ce: 0.147264, loss_dice: 0.069113
+[16:48:12.505] Val epoch: 261 : loss : 0.132337, loss_ce: 0.178161, loss_dice: 0.101788
+[16:48:13.031] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:17.303] Train epoch: 262 : loss : 0.099660, loss_ce: 0.145645, loss_dice: 0.069004
+[16:48:19.174] Val epoch: 262 : loss : 0.133033, loss_ce: 0.179448, loss_dice: 0.102090
+[16:48:19.783] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:23.472] Train epoch: 263 : loss : 0.097844, loss_ce: 0.143695, loss_dice: 0.067277
+[16:48:25.349] Val epoch: 263 : loss : 0.130182, loss_ce: 0.177236, loss_dice: 0.098812
+[16:48:25.860] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:29.536] Train epoch: 264 : loss : 0.098276, loss_ce: 0.143925, loss_dice: 0.067842
+[16:48:31.399] Val epoch: 264 : loss : 0.133939, loss_ce: 0.180586, loss_dice: 0.102841
+[16:48:31.921] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:35.807] Train epoch: 265 : loss : 0.100411, loss_ce: 0.147344, loss_dice: 0.069121
+[16:48:37.697] Val epoch: 265 : loss : 0.137228, loss_ce: 0.185159, loss_dice: 0.105274
+[16:48:38.205] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:41.828] Train epoch: 266 : loss : 0.098978, loss_ce: 0.145543, loss_dice: 0.067935
+[16:48:43.747] Val epoch: 266 : loss : 0.132394, loss_ce: 0.180464, loss_dice: 0.100346
+[16:48:44.281] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:48.036] Train epoch: 267 : loss : 0.101064, loss_ce: 0.148476, loss_dice: 0.069456
+[16:48:49.908] Val epoch: 267 : loss : 0.134670, loss_ce: 0.181772, loss_dice: 0.103269
+[16:48:50.447] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:48:54.181] Train epoch: 268 : loss : 0.098786, loss_ce: 0.144607, loss_dice: 0.068238
+[16:48:56.055] Val epoch: 268 : loss : 0.132225, loss_ce: 0.178014, loss_dice: 0.101698
+[16:48:56.558] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:00.268] Train epoch: 269 : loss : 0.101133, loss_ce: 0.148712, loss_dice: 0.069413
+[16:49:02.143] Val epoch: 269 : loss : 0.132719, loss_ce: 0.182395, loss_dice: 0.099602
+[16:49:02.662] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:06.324] Train epoch: 270 : loss : 0.100914, loss_ce: 0.149410, loss_dice: 0.068583
+[16:49:08.188] Val epoch: 270 : loss : 0.133920, loss_ce: 0.182579, loss_dice: 0.101480
+[16:49:08.727] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:12.411] Train epoch: 271 : loss : 0.100052, loss_ce: 0.147801, loss_dice: 0.068220
+[16:49:14.312] Val epoch: 271 : loss : 0.133474, loss_ce: 0.179453, loss_dice: 0.102822
+[16:49:14.850] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:18.247] Train epoch: 272 : loss : 0.099726, loss_ce: 0.146695, loss_dice: 0.068413
+[16:49:20.148] Val epoch: 272 : loss : 0.137886, loss_ce: 0.187028, loss_dice: 0.105124
+[16:49:20.672] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:24.266] Train epoch: 273 : loss : 0.099310, loss_ce: 0.145818, loss_dice: 0.068305
+[16:49:26.146] Val epoch: 273 : loss : 0.133202, loss_ce: 0.180001, loss_dice: 0.102004
+[16:49:26.661] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:30.234] Train epoch: 274 : loss : 0.097791, loss_ce: 0.144298, loss_dice: 0.066786
+[16:49:32.124] Val epoch: 274 : loss : 0.133410, loss_ce: 0.180389, loss_dice: 0.102090
+[16:49:32.651] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:36.490] Train epoch: 275 : loss : 0.098798, loss_ce: 0.144953, loss_dice: 0.068028
+[16:49:38.384] Val epoch: 275 : loss : 0.131131, loss_ce: 0.177242, loss_dice: 0.100390
+[16:49:38.888] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:42.731] Train epoch: 276 : loss : 0.097744, loss_ce: 0.143400, loss_dice: 0.067306
+[16:49:44.608] Val epoch: 276 : loss : 0.134620, loss_ce: 0.181825, loss_dice: 0.103150
+[16:49:45.182] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:49.148] Train epoch: 277 : loss : 0.100163, loss_ce: 0.148092, loss_dice: 0.068210
+[16:49:51.024] Val epoch: 277 : loss : 0.131583, loss_ce: 0.177112, loss_dice: 0.101231
+[16:49:51.528] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:49:55.571] Train epoch: 278 : loss : 0.099178, loss_ce: 0.146742, loss_dice: 0.067469
+[16:49:57.465] Val epoch: 278 : loss : 0.132348, loss_ce: 0.179733, loss_dice: 0.100758
+[16:49:57.984] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:01.958] Train epoch: 279 : loss : 0.097465, loss_ce: 0.142968, loss_dice: 0.067130
+[16:50:03.855] Val epoch: 279 : loss : 0.130722, loss_ce: 0.176762, loss_dice: 0.100029
+[16:50:04.373] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:08.215] Train epoch: 280 : loss : 0.098712, loss_ce: 0.145822, loss_dice: 0.067305
+[16:50:10.089] Val epoch: 280 : loss : 0.132678, loss_ce: 0.178774, loss_dice: 0.101948
+[16:50:10.593] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:14.506] Train epoch: 281 : loss : 0.099902, loss_ce: 0.147322, loss_dice: 0.068288
+[16:50:16.366] Val epoch: 281 : loss : 0.129977, loss_ce: 0.175306, loss_dice: 0.099758
+[16:50:16.883] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:20.673] Train epoch: 282 : loss : 0.097930, loss_ce: 0.144064, loss_dice: 0.067174
+[16:50:22.558] Val epoch: 282 : loss : 0.135833, loss_ce: 0.184008, loss_dice: 0.103717
+[16:50:23.075] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:26.683] Train epoch: 283 : loss : 0.100296, loss_ce: 0.147236, loss_dice: 0.069002
+[16:50:28.594] Val epoch: 283 : loss : 0.132558, loss_ce: 0.179347, loss_dice: 0.101366
+[16:50:29.129] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:33.175] Train epoch: 284 : loss : 0.098876, loss_ce: 0.145528, loss_dice: 0.067775
+[16:50:35.032] Val epoch: 284 : loss : 0.130722, loss_ce: 0.176469, loss_dice: 0.100225
+[16:50:35.574] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:39.411] Train epoch: 285 : loss : 0.097288, loss_ce: 0.143029, loss_dice: 0.066795
+[16:50:41.285] Val epoch: 285 : loss : 0.132254, loss_ce: 0.180565, loss_dice: 0.100047
+[16:50:41.821] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:45.372] Train epoch: 286 : loss : 0.105298, loss_ce: 0.157833, loss_dice: 0.070275
+[16:50:47.266] Val epoch: 286 : loss : 0.131875, loss_ce: 0.178021, loss_dice: 0.101111
+[16:50:47.803] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:51.514] Train epoch: 287 : loss : 0.100025, loss_ce: 0.147428, loss_dice: 0.068423
+[16:50:53.372] Val epoch: 287 : loss : 0.131795, loss_ce: 0.179094, loss_dice: 0.100262
+[16:50:53.891] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:50:57.726] Train epoch: 288 : loss : 0.098365, loss_ce: 0.144977, loss_dice: 0.067290
+[16:50:59.585] Val epoch: 288 : loss : 0.131039, loss_ce: 0.177858, loss_dice: 0.099826
+[16:51:00.116] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:03.899] Train epoch: 289 : loss : 0.099034, loss_ce: 0.145373, loss_dice: 0.068142
+[16:51:05.825] Val epoch: 289 : loss : 0.130395, loss_ce: 0.176268, loss_dice: 0.099813
+[16:51:06.352] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:10.402] Train epoch: 290 : loss : 0.098705, loss_ce: 0.145529, loss_dice: 0.067488
+[16:51:12.294] Val epoch: 290 : loss : 0.132442, loss_ce: 0.178730, loss_dice: 0.101583
+[16:51:12.840] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:16.467] Train epoch: 291 : loss : 0.098340, loss_ce: 0.144770, loss_dice: 0.067387
+[16:51:18.357] Val epoch: 291 : loss : 0.132383, loss_ce: 0.180313, loss_dice: 0.100429
+[16:51:18.894] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:22.827] Train epoch: 292 : loss : 0.097539, loss_ce: 0.142300, loss_dice: 0.067699
+[16:51:24.691] Val epoch: 292 : loss : 0.133336, loss_ce: 0.179865, loss_dice: 0.102318
+[16:51:25.224] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:28.852] Train epoch: 293 : loss : 0.096764, loss_ce: 0.141804, loss_dice: 0.066738
+[16:51:30.728] Val epoch: 293 : loss : 0.132237, loss_ce: 0.179549, loss_dice: 0.100696
+[16:51:31.297] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:35.370] Train epoch: 294 : loss : 0.097017, loss_ce: 0.143462, loss_dice: 0.066054
+[16:51:37.251] Val epoch: 294 : loss : 0.130676, loss_ce: 0.177806, loss_dice: 0.099256
+[16:51:37.752] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:41.496] Train epoch: 295 : loss : 0.099756, loss_ce: 0.146074, loss_dice: 0.068877
+[16:51:43.374] Val epoch: 295 : loss : 0.130696, loss_ce: 0.176847, loss_dice: 0.099929
+[16:51:43.909] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:47.622] Train epoch: 296 : loss : 0.098125, loss_ce: 0.143894, loss_dice: 0.067613
+[16:51:49.509] Val epoch: 296 : loss : 0.131968, loss_ce: 0.180353, loss_dice: 0.099711
+[16:51:50.058] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:53.875] Train epoch: 297 : loss : 0.096404, loss_ce: 0.141785, loss_dice: 0.066150
+[16:51:55.786] Val epoch: 297 : loss : 0.130034, loss_ce: 0.175219, loss_dice: 0.099911
+[16:51:56.303] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:51:59.988] Train epoch: 298 : loss : 0.097002, loss_ce: 0.142748, loss_dice: 0.066505
+[16:52:01.850] Val epoch: 298 : loss : 0.131667, loss_ce: 0.177729, loss_dice: 0.100959
+[16:52:02.355] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:06.685] Train epoch: 299 : loss : 0.097909, loss_ce: 0.144511, loss_dice: 0.066841
+[16:52:08.548] Val epoch: 299 : loss : 0.131249, loss_ce: 0.177880, loss_dice: 0.100161
+[16:52:09.069] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:12.983] Train epoch: 300 : loss : 0.096394, loss_ce: 0.141667, loss_dice: 0.066212
+[16:52:14.867] Val epoch: 300 : loss : 0.132559, loss_ce: 0.180395, loss_dice: 0.100667
+[16:52:15.386] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:19.282] Train epoch: 301 : loss : 0.098187, loss_ce: 0.144221, loss_dice: 0.067497
+[16:52:21.184] Val epoch: 301 : loss : 0.133428, loss_ce: 0.180688, loss_dice: 0.101922
+[16:52:21.723] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:25.395] Train epoch: 302 : loss : 0.100721, loss_ce: 0.148778, loss_dice: 0.068684
+[16:52:27.277] Val epoch: 302 : loss : 0.133408, loss_ce: 0.181649, loss_dice: 0.101248
+[16:52:27.800] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:31.701] Train epoch: 303 : loss : 0.100896, loss_ce: 0.148906, loss_dice: 0.068890
+[16:52:33.587] Val epoch: 303 : loss : 0.132900, loss_ce: 0.179982, loss_dice: 0.101512
+[16:52:34.106] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:38.107] Train epoch: 304 : loss : 0.098319, loss_ce: 0.145315, loss_dice: 0.066989
+[16:52:40.001] Val epoch: 304 : loss : 0.132032, loss_ce: 0.181587, loss_dice: 0.098995
+[16:52:40.533] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:44.395] Train epoch: 305 : loss : 0.097017, loss_ce: 0.142811, loss_dice: 0.066489
+[16:52:46.277] Val epoch: 305 : loss : 0.132800, loss_ce: 0.179376, loss_dice: 0.101749
+[16:52:46.840] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:50.760] Train epoch: 306 : loss : 0.097216, loss_ce: 0.143597, loss_dice: 0.066295
+[16:52:52.645] Val epoch: 306 : loss : 0.136265, loss_ce: 0.184178, loss_dice: 0.104322
+[16:52:53.194] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:52:57.422] Train epoch: 307 : loss : 0.096220, loss_ce: 0.141974, loss_dice: 0.065716
+[16:52:59.312] Val epoch: 307 : loss : 0.134953, loss_ce: 0.183800, loss_dice: 0.102389
+[16:52:59.861] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:03.423] Train epoch: 308 : loss : 0.096550, loss_ce: 0.141312, loss_dice: 0.066709
+[16:53:05.302] Val epoch: 308 : loss : 0.131007, loss_ce: 0.177244, loss_dice: 0.100183
+[16:53:05.838] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:09.455] Train epoch: 309 : loss : 0.095429, loss_ce: 0.140108, loss_dice: 0.065643
+[16:53:11.343] Val epoch: 309 : loss : 0.130205, loss_ce: 0.177435, loss_dice: 0.098718
+[16:53:11.891] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:15.737] Train epoch: 310 : loss : 0.096222, loss_ce: 0.142360, loss_dice: 0.065463
+[16:53:17.632] Val epoch: 310 : loss : 0.132084, loss_ce: 0.180074, loss_dice: 0.100091
+[16:53:18.254] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:22.195] Train epoch: 311 : loss : 0.098176, loss_ce: 0.145856, loss_dice: 0.066389
+[16:53:24.087] Val epoch: 311 : loss : 0.130669, loss_ce: 0.177966, loss_dice: 0.099137
+[16:53:24.652] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:28.501] Train epoch: 312 : loss : 0.096559, loss_ce: 0.142174, loss_dice: 0.066150
+[16:53:30.367] Val epoch: 312 : loss : 0.131005, loss_ce: 0.177504, loss_dice: 0.100006
+[16:53:30.908] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:34.716] Train epoch: 313 : loss : 0.096142, loss_ce: 0.141166, loss_dice: 0.066126
+[16:53:36.616] Val epoch: 313 : loss : 0.131008, loss_ce: 0.177807, loss_dice: 0.099808
+[16:53:37.166] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:41.044] Train epoch: 314 : loss : 0.096530, loss_ce: 0.141759, loss_dice: 0.066378
+[16:53:42.927] Val epoch: 314 : loss : 0.133406, loss_ce: 0.180848, loss_dice: 0.101778
+[16:53:43.465] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:47.334] Train epoch: 315 : loss : 0.093853, loss_ce: 0.138519, loss_dice: 0.064075
+[16:53:49.243] Val epoch: 315 : loss : 0.132925, loss_ce: 0.180158, loss_dice: 0.101436
+[16:53:49.784] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:53.826] Train epoch: 316 : loss : 0.096418, loss_ce: 0.142298, loss_dice: 0.065831
+[16:53:55.704] Val epoch: 316 : loss : 0.132053, loss_ce: 0.178872, loss_dice: 0.100839
+[16:53:56.230] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:53:59.848] Train epoch: 317 : loss : 0.095159, loss_ce: 0.138652, loss_dice: 0.066164
+[16:54:01.735] Val epoch: 317 : loss : 0.131493, loss_ce: 0.178117, loss_dice: 0.100411
+[16:54:02.217] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:05.835] Train epoch: 318 : loss : 0.097305, loss_ce: 0.142865, loss_dice: 0.066932
+[16:54:07.711] Val epoch: 318 : loss : 0.130834, loss_ce: 0.177247, loss_dice: 0.099893
+[16:54:08.309] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:12.047] Train epoch: 319 : loss : 0.096267, loss_ce: 0.141560, loss_dice: 0.066072
+[16:54:13.937] Val epoch: 319 : loss : 0.131104, loss_ce: 0.177254, loss_dice: 0.100338
+[16:54:14.458] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:18.226] Train epoch: 320 : loss : 0.097365, loss_ce: 0.141611, loss_dice: 0.067868
+[16:54:20.119] Val epoch: 320 : loss : 0.130571, loss_ce: 0.177129, loss_dice: 0.099533
+[16:54:20.654] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:24.328] Train epoch: 321 : loss : 0.094578, loss_ce: 0.139296, loss_dice: 0.064766
+[16:54:26.240] Val epoch: 321 : loss : 0.131823, loss_ce: 0.178610, loss_dice: 0.100632
+[16:54:26.775] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:30.670] Train epoch: 322 : loss : 0.094397, loss_ce: 0.139236, loss_dice: 0.064504
+[16:54:32.543] Val epoch: 322 : loss : 0.130796, loss_ce: 0.177281, loss_dice: 0.099805
+[16:54:33.043] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:36.836] Train epoch: 323 : loss : 0.094926, loss_ce: 0.140420, loss_dice: 0.064597
+[16:54:38.678] Val epoch: 323 : loss : 0.130073, loss_ce: 0.175716, loss_dice: 0.099644
+[16:54:39.239] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:43.428] Train epoch: 324 : loss : 0.095814, loss_ce: 0.141220, loss_dice: 0.065544
+[16:54:45.314] Val epoch: 324 : loss : 0.132829, loss_ce: 0.180116, loss_dice: 0.101305
+[16:54:45.842] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:49.461] Train epoch: 325 : loss : 0.095584, loss_ce: 0.139607, loss_dice: 0.066235
+[16:54:51.342] Val epoch: 325 : loss : 0.133508, loss_ce: 0.180973, loss_dice: 0.101865
+[16:54:51.894] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:54:55.854] Train epoch: 326 : loss : 0.096730, loss_ce: 0.141658, loss_dice: 0.066778
+[16:54:57.750] Val epoch: 326 : loss : 0.129820, loss_ce: 0.176200, loss_dice: 0.098900
+[16:54:58.276] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:01.920] Train epoch: 327 : loss : 0.095235, loss_ce: 0.140434, loss_dice: 0.065103
+[16:55:03.813] Val epoch: 327 : loss : 0.128472, loss_ce: 0.173678, loss_dice: 0.098334
+[16:55:04.353] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/best_model.pth
+[16:55:08.182] Train epoch: 328 : loss : 0.093642, loss_ce: 0.137990, loss_dice: 0.064077
+[16:55:10.055] Val epoch: 328 : loss : 0.129163, loss_ce: 0.174633, loss_dice: 0.098849
+[16:55:10.635] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:14.571] Train epoch: 329 : loss : 0.094522, loss_ce: 0.139537, loss_dice: 0.064511
+[16:55:16.462] Val epoch: 329 : loss : 0.130846, loss_ce: 0.176865, loss_dice: 0.100168
+[16:55:17.019] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:20.740] Train epoch: 330 : loss : 0.094153, loss_ce: 0.138544, loss_dice: 0.064559
+[16:55:22.624] Val epoch: 330 : loss : 0.131136, loss_ce: 0.178106, loss_dice: 0.099823
+[16:55:23.190] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:27.239] Train epoch: 331 : loss : 0.095995, loss_ce: 0.141247, loss_dice: 0.065826
+[16:55:29.141] Val epoch: 331 : loss : 0.132363, loss_ce: 0.179402, loss_dice: 0.101004
+[16:55:29.681] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:33.303] Train epoch: 332 : loss : 0.093608, loss_ce: 0.137883, loss_dice: 0.064090
+[16:55:35.156] Val epoch: 332 : loss : 0.130937, loss_ce: 0.177944, loss_dice: 0.099599
+[16:55:35.750] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:39.688] Train epoch: 333 : loss : 0.094916, loss_ce: 0.139601, loss_dice: 0.065125
+[16:55:41.583] Val epoch: 333 : loss : 0.132914, loss_ce: 0.181054, loss_dice: 0.100820
+[16:55:42.111] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:45.752] Train epoch: 334 : loss : 0.095045, loss_ce: 0.140320, loss_dice: 0.064863
+[16:55:47.629] Val epoch: 334 : loss : 0.131212, loss_ce: 0.178120, loss_dice: 0.099940
+[16:55:48.196] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:52.004] Train epoch: 335 : loss : 0.096229, loss_ce: 0.142720, loss_dice: 0.065235
+[16:55:53.886] Val epoch: 335 : loss : 0.131417, loss_ce: 0.177594, loss_dice: 0.100633
+[16:55:54.402] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:55:58.042] Train epoch: 336 : loss : 0.095866, loss_ce: 0.141142, loss_dice: 0.065682
+[16:55:59.923] Val epoch: 336 : loss : 0.133148, loss_ce: 0.181808, loss_dice: 0.100708
+[16:56:00.576] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:04.235] Train epoch: 337 : loss : 0.094635, loss_ce: 0.140111, loss_dice: 0.064317
+[16:56:06.081] Val epoch: 337 : loss : 0.131721, loss_ce: 0.178934, loss_dice: 0.100246
+[16:56:06.593] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:10.167] Train epoch: 338 : loss : 0.094847, loss_ce: 0.139243, loss_dice: 0.065249
+[16:56:12.050] Val epoch: 338 : loss : 0.132028, loss_ce: 0.179227, loss_dice: 0.100562
+[16:56:12.576] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:16.258] Train epoch: 339 : loss : 0.095127, loss_ce: 0.138337, loss_dice: 0.066320
+[16:56:18.108] Val epoch: 339 : loss : 0.130240, loss_ce: 0.175526, loss_dice: 0.100049
+[16:56:18.640] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:22.242] Train epoch: 340 : loss : 0.094847, loss_ce: 0.139451, loss_dice: 0.065111
+[16:56:24.139] Val epoch: 340 : loss : 0.130531, loss_ce: 0.177745, loss_dice: 0.099055
+[16:56:24.672] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:28.376] Train epoch: 341 : loss : 0.093761, loss_ce: 0.138665, loss_dice: 0.063825
+[16:56:30.256] Val epoch: 341 : loss : 0.129268, loss_ce: 0.175032, loss_dice: 0.098758
+[16:56:30.779] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:34.368] Train epoch: 342 : loss : 0.095333, loss_ce: 0.140912, loss_dice: 0.064946
+[16:56:36.251] Val epoch: 342 : loss : 0.129402, loss_ce: 0.175764, loss_dice: 0.098495
+[16:56:36.786] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:40.395] Train epoch: 343 : loss : 0.094549, loss_ce: 0.140042, loss_dice: 0.064220
+[16:56:42.297] Val epoch: 343 : loss : 0.130735, loss_ce: 0.177960, loss_dice: 0.099251
+[16:56:42.811] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:46.943] Train epoch: 344 : loss : 0.093593, loss_ce: 0.137335, loss_dice: 0.064432
+[16:56:48.837] Val epoch: 344 : loss : 0.130501, loss_ce: 0.177570, loss_dice: 0.099121
+[16:56:49.373] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:53.440] Train epoch: 345 : loss : 0.094892, loss_ce: 0.139544, loss_dice: 0.065124
+[16:56:55.347] Val epoch: 345 : loss : 0.131447, loss_ce: 0.177926, loss_dice: 0.100461
+[16:56:55.797] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:56:59.671] Train epoch: 346 : loss : 0.096049, loss_ce: 0.142384, loss_dice: 0.065159
+[16:57:01.535] Val epoch: 346 : loss : 0.130019, loss_ce: 0.176723, loss_dice: 0.098884
+[16:57:02.039] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:05.888] Train epoch: 347 : loss : 0.093522, loss_ce: 0.137444, loss_dice: 0.064240
+[16:57:07.759] Val epoch: 347 : loss : 0.129934, loss_ce: 0.175588, loss_dice: 0.099498
+[16:57:08.248] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:12.112] Train epoch: 348 : loss : 0.094420, loss_ce: 0.138919, loss_dice: 0.064755
+[16:57:14.030] Val epoch: 348 : loss : 0.129058, loss_ce: 0.173659, loss_dice: 0.099325
+[16:57:14.523] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:18.255] Train epoch: 349 : loss : 0.093930, loss_ce: 0.138539, loss_dice: 0.064190
+[16:57:20.163] Val epoch: 349 : loss : 0.136431, loss_ce: 0.184999, loss_dice: 0.104053
+[16:57:20.677] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:24.587] Train epoch: 350 : loss : 0.094372, loss_ce: 0.138198, loss_dice: 0.065155
+[16:57:26.456] Val epoch: 350 : loss : 0.131165, loss_ce: 0.177620, loss_dice: 0.100194
+[16:57:26.956] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:30.762] Train epoch: 351 : loss : 0.095880, loss_ce: 0.140657, loss_dice: 0.066029
+[16:57:32.645] Val epoch: 351 : loss : 0.129412, loss_ce: 0.176357, loss_dice: 0.098116
+[16:57:33.146] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:36.799] Train epoch: 352 : loss : 0.093206, loss_ce: 0.136727, loss_dice: 0.064193
+[16:57:38.691] Val epoch: 352 : loss : 0.130442, loss_ce: 0.176331, loss_dice: 0.099849
+[16:57:39.239] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:43.016] Train epoch: 353 : loss : 0.092742, loss_ce: 0.136273, loss_dice: 0.063722
+[16:57:44.923] Val epoch: 353 : loss : 0.131301, loss_ce: 0.178755, loss_dice: 0.099666
+[16:57:45.442] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:49.212] Train epoch: 354 : loss : 0.093801, loss_ce: 0.137504, loss_dice: 0.064666
+[16:57:51.093] Val epoch: 354 : loss : 0.132716, loss_ce: 0.179361, loss_dice: 0.101619
+[16:57:51.603] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:57:55.309] Train epoch: 355 : loss : 0.093750, loss_ce: 0.138787, loss_dice: 0.063726
+[16:57:57.191] Val epoch: 355 : loss : 0.129911, loss_ce: 0.177433, loss_dice: 0.098230
+[16:57:57.784] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:01.595] Train epoch: 356 : loss : 0.092266, loss_ce: 0.136267, loss_dice: 0.062933
+[16:58:03.438] Val epoch: 356 : loss : 0.131011, loss_ce: 0.177659, loss_dice: 0.099913
+[16:58:03.961] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:07.718] Train epoch: 357 : loss : 0.093793, loss_ce: 0.138053, loss_dice: 0.064286
+[16:58:09.611] Val epoch: 357 : loss : 0.130326, loss_ce: 0.176628, loss_dice: 0.099457
+[16:58:10.116] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:13.865] Train epoch: 358 : loss : 0.093707, loss_ce: 0.137933, loss_dice: 0.064223
+[16:58:15.752] Val epoch: 358 : loss : 0.130394, loss_ce: 0.176607, loss_dice: 0.099586
+[16:58:16.298] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:20.263] Train epoch: 359 : loss : 0.095162, loss_ce: 0.140533, loss_dice: 0.064915
+[16:58:22.159] Val epoch: 359 : loss : 0.133408, loss_ce: 0.181148, loss_dice: 0.101581
+[16:58:22.732] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:26.275] Train epoch: 360 : loss : 0.094282, loss_ce: 0.139468, loss_dice: 0.064158
+[16:58:28.149] Val epoch: 360 : loss : 0.130104, loss_ce: 0.176415, loss_dice: 0.099229
+[16:58:28.660] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:32.512] Train epoch: 361 : loss : 0.094340, loss_ce: 0.138425, loss_dice: 0.064950
+[16:58:34.369] Val epoch: 361 : loss : 0.131115, loss_ce: 0.178133, loss_dice: 0.099770
+[16:58:34.905] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:38.638] Train epoch: 362 : loss : 0.092003, loss_ce: 0.135061, loss_dice: 0.063297
+[16:58:40.512] Val epoch: 362 : loss : 0.132638, loss_ce: 0.180388, loss_dice: 0.100805
+[16:58:41.035] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:44.566] Train epoch: 363 : loss : 0.094386, loss_ce: 0.138960, loss_dice: 0.064670
+[16:58:46.454] Val epoch: 363 : loss : 0.131920, loss_ce: 0.178385, loss_dice: 0.100943
+[16:58:46.961] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:50.736] Train epoch: 364 : loss : 0.093323, loss_ce: 0.137099, loss_dice: 0.064139
+[16:58:52.618] Val epoch: 364 : loss : 0.129443, loss_ce: 0.176088, loss_dice: 0.098347
+[16:58:53.116] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:58:56.856] Train epoch: 365 : loss : 0.093044, loss_ce: 0.137045, loss_dice: 0.063710
+[16:58:58.745] Val epoch: 365 : loss : 0.132407, loss_ce: 0.180035, loss_dice: 0.100655
+[16:58:59.229] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:03.040] Train epoch: 366 : loss : 0.092478, loss_ce: 0.136618, loss_dice: 0.063052
+[16:59:04.908] Val epoch: 366 : loss : 0.133032, loss_ce: 0.181379, loss_dice: 0.100800
+[16:59:05.426] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:09.201] Train epoch: 367 : loss : 0.094711, loss_ce: 0.139183, loss_dice: 0.065063
+[16:59:11.073] Val epoch: 367 : loss : 0.132428, loss_ce: 0.180414, loss_dice: 0.100437
+[16:59:11.592] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:15.625] Train epoch: 368 : loss : 0.092420, loss_ce: 0.135069, loss_dice: 0.063988
+[16:59:17.493] Val epoch: 368 : loss : 0.131429, loss_ce: 0.177387, loss_dice: 0.100790
+[16:59:18.026] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:21.671] Train epoch: 369 : loss : 0.093179, loss_ce: 0.136361, loss_dice: 0.064392
+[16:59:23.556] Val epoch: 369 : loss : 0.129123, loss_ce: 0.175331, loss_dice: 0.098318
+[16:59:24.047] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:27.926] Train epoch: 370 : loss : 0.092604, loss_ce: 0.136095, loss_dice: 0.063610
+[16:59:29.800] Val epoch: 370 : loss : 0.129705, loss_ce: 0.176597, loss_dice: 0.098444
+[16:59:30.298] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:33.950] Train epoch: 371 : loss : 0.092492, loss_ce: 0.136561, loss_dice: 0.063112
+[16:59:35.839] Val epoch: 371 : loss : 0.131138, loss_ce: 0.178640, loss_dice: 0.099470
+[16:59:36.342] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:39.967] Train epoch: 372 : loss : 0.095485, loss_ce: 0.140357, loss_dice: 0.065571
+[16:59:41.848] Val epoch: 372 : loss : 0.131352, loss_ce: 0.177738, loss_dice: 0.100428
+[16:59:42.366] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:46.135] Train epoch: 373 : loss : 0.092845, loss_ce: 0.135664, loss_dice: 0.064299
+[16:59:48.006] Val epoch: 373 : loss : 0.131665, loss_ce: 0.179988, loss_dice: 0.099451
+[16:59:48.532] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:52.284] Train epoch: 374 : loss : 0.092973, loss_ce: 0.137535, loss_dice: 0.063266
+[16:59:54.190] Val epoch: 374 : loss : 0.131909, loss_ce: 0.179132, loss_dice: 0.100427
+[16:59:54.712] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[16:59:58.548] Train epoch: 375 : loss : 0.092192, loss_ce: 0.135095, loss_dice: 0.063590
+[17:00:00.439] Val epoch: 375 : loss : 0.131143, loss_ce: 0.178471, loss_dice: 0.099591
+[17:00:00.953] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:04.612] Train epoch: 376 : loss : 0.092917, loss_ce: 0.136987, loss_dice: 0.063537
+[17:00:06.526] Val epoch: 376 : loss : 0.131948, loss_ce: 0.180143, loss_dice: 0.099818
+[17:00:07.045] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:10.787] Train epoch: 377 : loss : 0.094371, loss_ce: 0.139380, loss_dice: 0.064364
+[17:00:12.684] Val epoch: 377 : loss : 0.131056, loss_ce: 0.178003, loss_dice: 0.099758
+[17:00:13.190] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:16.718] Train epoch: 378 : loss : 0.091805, loss_ce: 0.134457, loss_dice: 0.063371
+[17:00:18.584] Val epoch: 378 : loss : 0.131003, loss_ce: 0.178507, loss_dice: 0.099334
+[17:00:19.111] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:22.992] Train epoch: 379 : loss : 0.091987, loss_ce: 0.134874, loss_dice: 0.063396
+[17:00:24.868] Val epoch: 379 : loss : 0.130966, loss_ce: 0.178640, loss_dice: 0.099183
+[17:00:25.405] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:29.326] Train epoch: 380 : loss : 0.091696, loss_ce: 0.135496, loss_dice: 0.062496
+[17:00:31.216] Val epoch: 380 : loss : 0.130548, loss_ce: 0.177066, loss_dice: 0.099535
+[17:00:31.738] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:35.576] Train epoch: 381 : loss : 0.092072, loss_ce: 0.135572, loss_dice: 0.063072
+[17:00:37.448] Val epoch: 381 : loss : 0.131125, loss_ce: 0.177887, loss_dice: 0.099949
+[17:00:37.966] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:41.467] Train epoch: 382 : loss : 0.093763, loss_ce: 0.137924, loss_dice: 0.064323
+[17:00:43.362] Val epoch: 382 : loss : 0.132228, loss_ce: 0.179105, loss_dice: 0.100977
+[17:00:43.945] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:47.653] Train epoch: 383 : loss : 0.091929, loss_ce: 0.135269, loss_dice: 0.063036
+[17:00:49.545] Val epoch: 383 : loss : 0.130521, loss_ce: 0.177289, loss_dice: 0.099343
+[17:00:50.042] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:53.849] Train epoch: 384 : loss : 0.093602, loss_ce: 0.137329, loss_dice: 0.064451
+[17:00:55.755] Val epoch: 384 : loss : 0.132054, loss_ce: 0.179353, loss_dice: 0.100521
+[17:00:56.268] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:00:59.978] Train epoch: 385 : loss : 0.090588, loss_ce: 0.133098, loss_dice: 0.062247
+[17:01:01.900] Val epoch: 385 : loss : 0.131701, loss_ce: 0.178866, loss_dice: 0.100258
+[17:01:02.419] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:06.057] Train epoch: 386 : loss : 0.094102, loss_ce: 0.137785, loss_dice: 0.064980
+[17:01:07.967] Val epoch: 386 : loss : 0.129683, loss_ce: 0.175784, loss_dice: 0.098950
+[17:01:08.493] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:12.388] Train epoch: 387 : loss : 0.092846, loss_ce: 0.137347, loss_dice: 0.063179
+[17:01:14.262] Val epoch: 387 : loss : 0.131301, loss_ce: 0.178643, loss_dice: 0.099740
+[17:01:14.838] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:18.804] Train epoch: 388 : loss : 0.092461, loss_ce: 0.136846, loss_dice: 0.062871
+[17:01:20.708] Val epoch: 388 : loss : 0.130236, loss_ce: 0.176404, loss_dice: 0.099457
+[17:01:21.250] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:25.024] Train epoch: 389 : loss : 0.092668, loss_ce: 0.136829, loss_dice: 0.063228
+[17:01:26.915] Val epoch: 389 : loss : 0.130874, loss_ce: 0.177204, loss_dice: 0.099987
+[17:01:27.441] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:31.062] Train epoch: 390 : loss : 0.093599, loss_ce: 0.137661, loss_dice: 0.064225
+[17:01:32.957] Val epoch: 390 : loss : 0.130048, loss_ce: 0.176564, loss_dice: 0.099038
+[17:01:33.481] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:37.444] Train epoch: 391 : loss : 0.092212, loss_ce: 0.135548, loss_dice: 0.063321
+[17:01:39.313] Val epoch: 391 : loss : 0.132103, loss_ce: 0.179552, loss_dice: 0.100471
+[17:01:39.891] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:43.659] Train epoch: 392 : loss : 0.092388, loss_ce: 0.136524, loss_dice: 0.062964
+[17:01:45.541] Val epoch: 392 : loss : 0.130839, loss_ce: 0.177508, loss_dice: 0.099726
+[17:01:46.102] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:49.898] Train epoch: 393 : loss : 0.091223, loss_ce: 0.134350, loss_dice: 0.062472
+[17:01:51.765] Val epoch: 393 : loss : 0.129353, loss_ce: 0.175376, loss_dice: 0.098670
+[17:01:52.300] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:01:56.083] Train epoch: 394 : loss : 0.092743, loss_ce: 0.136083, loss_dice: 0.063850
+[17:01:57.956] Val epoch: 394 : loss : 0.130042, loss_ce: 0.176607, loss_dice: 0.098998
+[17:01:58.463] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:02:02.468] Train epoch: 395 : loss : 0.093618, loss_ce: 0.137542, loss_dice: 0.064336
+[17:02:04.341] Val epoch: 395 : loss : 0.130145, loss_ce: 0.176881, loss_dice: 0.098987
+[17:02:04.872] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:02:08.512] Train epoch: 396 : loss : 0.092621, loss_ce: 0.136413, loss_dice: 0.063427
+[17:02:10.391] Val epoch: 396 : loss : 0.131858, loss_ce: 0.179497, loss_dice: 0.100099
+[17:02:10.940] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:02:14.666] Train epoch: 397 : loss : 0.092984, loss_ce: 0.137463, loss_dice: 0.063332
+[17:02:16.564] Val epoch: 397 : loss : 0.129851, loss_ce: 0.176500, loss_dice: 0.098752
+[17:02:17.066] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:02:20.632] Train epoch: 398 : loss : 0.091830, loss_ce: 0.134944, loss_dice: 0.063088
+[17:02:22.513] Val epoch: 398 : loss : 0.130075, loss_ce: 0.176627, loss_dice: 0.099040
+[17:02:23.033] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
+[17:02:26.672] Train epoch: 399 : loss : 0.093581, loss_ce: 0.138227, loss_dice: 0.063818
+[17:02:28.546] Val epoch: 399 : loss : 0.129665, loss_ce: 0.176138, loss_dice: 0.098682
+[17:02:29.074] save model to /Swin-Unet/experiments/cellmix_kfold_20250718_145719/fold_3/last_model.pth
