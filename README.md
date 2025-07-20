@@ -31,8 +31,21 @@ CUDA：11.0 ~ 11.8 （11.8使用）
 
 Dockerfileの実行でOK（内容を確認して適宜修正すること）
 ```bash
+cd SwinU-net/Docker
 sh docker.sh サーバー番号
 ```
+
+### Condaの有効化
+```bash
+source /opt/conda/etc/profile.d/conda.sh
+conda activate swinunet
+```
+
+### conda仮想環境から抜ける
+```bash
+conda deactivate
+```
+
 
 ---
 
@@ -65,6 +78,20 @@ python3 run_experiments.py --mode kfold-all --epochs 150 --batch_size 24
 # 実行結果
 # → experiments/cellmix_kfold_YYYYMMDD_HHMMSS/ に保存
 # → fold_0/, fold_1/, fold_2/, fold_3/, fold_4/ が作成される
+```
+
+```bash
+# 基本学習
+python3 run_experiments.py --mode train --epochs 150 --batch_size 24
+
+# K-fold全実行
+python3 run_experiments.py --mode kfold-all --epochs 150 --batch_size 24
+
+# 特定fold実行
+python3 run_experiments.py --mode kfold-single --fold 2 --epochs 100
+
+# アンサンブル作成
+python3 run_experiments.py --mode ensemble
 ```
 
 

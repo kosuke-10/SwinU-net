@@ -99,6 +99,10 @@ class CellMixDataset(Dataset):
             # トレーニング用
             image_path = os.path.join(self.base_dir, 'imagesTr', f'{case_name}_0000.png')
             label_path = os.path.join(self.base_dir, 'labelsTr', f'{case_name}.png')
+        elif self.split == 'val':
+            # 🆕 valスプリット追加（trainと同じディレクトリを使用）
+            image_path = os.path.join(self.base_dir, 'imagesTr', f'{case_name}_0000.png')
+            label_path = os.path.join(self.base_dir, 'labelsTr', f'{case_name}.png')
         elif self.split == 'test':
             # ✅ テスト用：imagesTs と labelsTs を使用
             image_path = os.path.join(self.base_dir, 'imagesTs', f'{case_name}_0000.png')
