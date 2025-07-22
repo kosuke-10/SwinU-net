@@ -214,20 +214,33 @@ def trainer_cellmix(args, model, snapshot_path):
     num_classes = args.num_classes
     batch_size = args.batch_size * args.n_gpu
     
-    # データセット作成
+    # 🆕 環境変数からaugmentation_modeを取得
+    augmentation_mode = os.environ.get('AUGMENTATION_MODE', 'standard')
+    
+    # Data Augmentation設定
     db_train = CellMixDataset(
         base_dir=args.root_path, 
         list_dir=args.list_dir, 
         split="train",
-        transform=RandomGenerator(output_size=[args.img_size, args.img_size])
+        transform=RandomGenerator(
+            output_size=[args.img_size, args.img_size],
+            augmentation_mode=augmentation_mode  # 🆕 環境変数から取得
+        )
     )
     
+    # 🔧 検証用データセット（拡張なし/軽微）
     db_val = CellMixDataset(
         base_dir=args.root_path,
         list_dir=args.list_dir,
         split="val",
-        transform=RandomGenerator(output_size=[args.img_size, args.img_size])
+        transform=RandomGenerator(
+            output_size=[args.img_size, args.img_size],
+            augmentation_mode='standard'  # 🆕 検証は常に標準モード
+        )
     )
+    
+    # 🆕 使用中のモードをログ出力
+    logging.info(f"Data Augmentation mode: {augmentation_mode}")
     
     # 可視化用データリスト
     train_losses = []
@@ -379,113 +392,3 @@ def trainer_cellmix(args, model, snapshot_path):
     writer.close()
     return "Training Finished!"
     
-    from datasets.dataset_cellmix import CellMixDataset, RandomGenerator
-    logging.basicConfig(filename=snapshot_path + "/log.txt", level=logging.INFO,
-                        format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')
-    logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
-    logging.info(str(args))
-    
-    base_lr = args.base_lr
-    num_classes = args.num_classes
-    batch_size = args.batch_size * args.n_gpu
-    
-    # 🔧 修正: transforms.Compose削除
-    db_train = CellMixDataset(
-        base_dir=args.root_path, 
-        list_dir=args.list_dir, 
-        split="train",
-        transform=RandomGenerator(output_size=[args.img_size, args.img_size])  # Compose削除
-    )
-    
-    db_val = CellMixDataset(
-        base_dir=args.root_path,
-        list_dir=args.list_dir,
-        split="val",
-        transform=RandomGenerator(output_size=[args.img_size, args.img_size])  # Compose削除
-    )
-    
-    # 🆕 可視化用データリスト追加
-    train_losses = []
-    val_losses = []  
-    train_dice_losses = []
-    val_dice_losses = []
-    train_ce_losses = []
-    val_ce_losses = []
-    epochs_list = []
-    
-    print("The length of train set is: {}".format(len(db_train)))
-    print("The length of val set is: {}".format(len(db_val)))
-    
-    # ... existing DataLoader code ...
-    
-    for epoch_num in iterator:
-        model.train()
-        batch_dice_loss = 0
-        batch_ce_loss = 0
-        
-        # ... existing training loop ...
-        
-        batch_ce_loss /= len(train_loader)
-        batch_dice_loss /= len(train_loader)
-        batch_loss = 0.4 * batch_ce_loss + 0.6 * batch_dice_loss
-        logging.info('Train epoch: %d : loss : %f, loss_ce: %f, loss_dice: %f' % (
-            epoch_num, batch_loss, batch_ce_loss, batch_dice_loss))
-        
-        # 🆕 学習データを記録
-        epochs_list.append(epoch_num + 1)
-        train_losses.append(batch_loss)
-        train_dice_losses.append(batch_dice_loss)
-        train_ce_losses.append(batch_ce_loss)
-        
-        # バリデーション
-        if (epoch_num + 1) % args.eval_interval == 0:
-            model.eval()
-            batch_dice_loss_val = 0
-            batch_ce_loss_val = 0
-            
-            with torch.no_grad():
-                for i_batch, sampled_batch in tqdm(enumerate(val_loader), desc=f"Val: {epoch_num}",
-                                                  total=len(val_loader), leave=False):
-                    image_batch, label_batch = sampled_batch['image'], sampled_batch['label']
-                    image_batch, label_batch = image_batch.cuda(), label_batch.cuda()
-                    outputs = model(image_batch)
-                    loss_ce = ce_loss(outputs, label_batch[:].long())
-                    loss_dice = dice_loss(outputs, label_batch, softmax=True)
-                    batch_dice_loss_val += loss_dice.item()
-                    batch_ce_loss_val += loss_ce.item()
-            
-            batch_ce_loss_val /= len(val_loader)
-            batch_dice_loss_val /= len(val_loader)
-            batch_loss_val = 0.4 * batch_ce_loss_val + 0.6 * batch_dice_loss_val
-            logging.info('Val epoch: %d : loss : %f, loss_ce: %f, loss_dice: %f' % (
-                epoch_num, batch_loss_val, batch_ce_loss_val, batch_dice_loss_val))
-            
-            # 🆕 バリデーションデータを記録
-            val_losses.append(batch_loss_val)
-            val_dice_losses.append(batch_dice_loss_val)
-            val_ce_losses.append(batch_ce_loss_val)
-            
-            # 🎨 進捗プロット生成
-            plot_training_progress(
-                epochs_list[-len(val_losses):], # val_lossesと同じ長さに調整
-                train_losses[-len(val_losses):], 
-                val_losses, 
-                train_dice_losses[-len(val_losses):], 
-                val_dice_losses,
-                train_ce_losses[-len(val_losses):], 
-                val_ce_losses,
-                save_path=os.path.join(snapshot_path, 'progress.png'),
-                title=f'CellMix Training Progress - Epoch {epoch_num + 1}'
-            )
-            
-            if batch_loss_val < best_loss:
-                save_mode_path = os.path.join(snapshot_path, 'best_model.pth')
-                torch.save(model.state_dict(), save_mode_path)
-                best_loss = batch_loss_val
-            else:
-                save_mode_path = os.path.join(snapshot_path, 'last_model.pth')
-                torch.save(model.state_dict(), save_mode_path)
-            logging.info("save model to {}".format(save_mode_path))
-    
-    writer.close()
-    return "Training Finished!"

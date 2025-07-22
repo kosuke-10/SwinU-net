@@ -1,0 +1,9 @@
+K-fold Cross Validation Results
+========================================
+Total folds: 5
+Successful: 5
+Failed: 0
+Success rate: 100.0%
+Augmentation mode: nnunet
+Eval interval: 1
+Successful folds: 1, 2, 3, 4, 5

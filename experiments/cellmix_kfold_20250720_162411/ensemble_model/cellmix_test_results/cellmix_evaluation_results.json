@@ -1,0 +1,136 @@
+{
+  "num_samples": 78,
+  "dataset": "CellMix",
+  "class_names": [
+    "Background",
+    "Nucleus",
+    "Cytoplasm"
+  ],
+  "overall_accuracy": 0.9281416593079539,
+  "overall_accuracy_std": 0.03581993654685531,
+  "overall_mean_dice": 0.8739128917710394,
+  "overall_mean_iou": 0.7907256219122145,
+  "overall_mean_precision": 0.8745252449790119,
+  "overall_mean_recall": 0.8820171774844338,
+  "overall_mean_f1": 0.8739128914602787,
+  "overall_mean_dice_fg": 0.8245714539900805,
+  "overall_mean_iou_fg": 0.7121762247421802,
+  "overall_mean_precision_fg": 0.8255432194416292,
+  "overall_mean_recall_fg": 0.836277026300078,
+  "overall_mean_f1_fg": 0.8245714547535496,
+  "class_wise_dice": {
+    "Background": {
+      "mean": 0.9725957673329574,
+      "std": 0.025768885143910878,
+      "min": 0.8690279722213745,
+      "max": 0.9965317845344543
+    },
+    "Nucleus": {
+      "mean": 0.8572522676908053,
+      "std": 0.06919657357732992,
+      "min": 0.5310319662094116,
+      "max": 0.9813888669013977
+    },
+    "Cytoplasm": {
+      "mean": 0.7918906402893555,
+      "std": 0.10964463697149965,
+      "min": 0.4763684868812561,
+      "max": 0.9679829478263855
+    }
+  },
+  "class_wise_iou": {
+    "Background": {
+      "mean": 0.947824416252283,
+      "std": 0.046715130559028505,
+      "min": 0.7683902978897095,
+      "max": 0.9930874705314636
+    },
+    "Nucleus": {
+      "mean": 0.755918494783915,
+      "std": 0.09566510082656,
+      "min": 0.36149999499320984,
+      "max": 0.9634578227996826
+    },
+    "Cytoplasm": {
+      "mean": 0.6684339547004455,
+      "std": 0.14360630390031967,
+      "min": 0.3126533329486847,
+      "max": 0.93795245885849
+    }
+  },
+  "class_wise_precision": {
+    "Background": {
+      "mean": 0.9724892960537772,
+      "std": 0.02997320673483478,
+      "min": 0.8488445710667933,
+      "max": 0.9987770829968389
+    },
+    "Nucleus": {
+      "mean": 0.8561120963815384,
+      "std": 0.08828283809330043,
+      "min": 0.3628910824828509,
+      "max": 0.9962074523561202
+    },
+    "Cytoplasm": {
+      "mean": 0.7949743425017196,
+      "std": 0.14042681300041665,
+      "min": 0.3250136636910184,
+      "max": 0.9842700003754177
+    }
+  },
+  "class_wise_recall": {
+    "Background": {
+      "mean": 0.973497479853145,
+      "std": 0.03304782457274372,
+      "min": 0.8046217892441448,
+      "max": 0.9984697781178271
+    },
+    "Nucleus": {
+      "mean": 0.869322339354139,
+      "std": 0.08388302672723838,
+      "min": 0.43150506888484536,
+      "max": 0.989507299270073
+    },
+    "Cytoplasm": {
+      "mean": 0.803231713246017,
+      "std": 0.10397506203341043,
+      "min": 0.4961044912923923,
+      "max": 0.9850582088184068
+    }
+  },
+  "class_wise_f1": {
+    "Background": {
+      "mean": 0.9725957648737374,
+      "std": 0.025768883084475575,
+      "min": 0.8690279561999142,
+      "max": 0.9965317620969302
+    },
+    "Nucleus": {
+      "mean": 0.8572522679660927,
+      "std": 0.06919657600678553,
+      "min": 0.5310319500550863,
+      "max": 0.9813888745682322
+    },
+    "Cytoplasm": {
+      "mean": 0.7918906415410065,
+      "std": 0.10964463968439386,
+      "min": 0.47636849132176234,
+      "max": 0.9679829523032806
+    }
+  },
+  "timestamp": "2025-07-21 17:03:44.020813",
+  "ensemble_info": {
+    "fold_model_paths": [
+      "experiments/cellmix_kfold_20250720_162411/fold_1/best_model.pth",
+      "experiments/cellmix_kfold_20250720_162411/fold_2/best_model.pth",
+      "experiments/cellmix_kfold_20250720_162411/fold_3/best_model.pth",
+      "experiments/cellmix_kfold_20250720_162411/fold_4/best_model.pth",
+      "experiments/cellmix_kfold_20250720_162411/fold_5/best_model.pth"
+    ],
+    "num_models": 5,
+    "created_timestamp": "2025-07-21 16:55:00.855251",
+    "model_type": "SwinUnet",
+    "num_classes": 3,
+    "img_size": 224
+  }
+}

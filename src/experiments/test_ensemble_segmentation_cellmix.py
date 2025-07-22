@@ -614,13 +614,37 @@ IoU:
         
         print(f"\n📂 Results saved to: {self.results_dir}")
 
+def find_latest_ensemble_model():
+    """最新のアンサンブルモデルディレクトリを自動検出"""
+    project_root = Path(__file__).parent.parent.parent
+    experiments_dir = project_root / "experiments"
+    
+    if not experiments_dir.exists():
+        raise FileNotFoundError(f"Experiments directory not found: {experiments_dir}")
+    
+    # cellmix_kfold_* ディレクトリを検索
+    kfold_dirs = list(experiments_dir.glob("cellmix_kfold_*"))
+    
+    if not kfold_dirs:
+        raise FileNotFoundError("No cellmix_kfold experiments found")
+    
+    # 最新のディレクトリを取得（タイムスタンプでソート）
+    latest_kfold_dir = sorted(kfold_dirs, key=lambda x: x.name)[-1]
+    ensemble_dir = latest_kfold_dir / "ensemble_model"
+    
+    if not ensemble_dir.exists():
+        raise FileNotFoundError(f"Ensemble model not found in: {ensemble_dir}")
+    
+    print(f"🔍 Auto-detected latest ensemble: {ensemble_dir}")
+    return str(ensemble_dir)
+
+
 def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='CellMix Ensemble Segmentation Evaluation')
-    parser.add_argument('--ensemble_dir', type=str,
-                       default='experiments/cellmix_kfold_20250718_145719/ensemble_model',
-                       help='Ensemble model directory')
+    parser.add_argument('--ensemble_dir', type=str, default=None,  # 🔧 デフォルトをNoneに変更
+                       help='Ensemble model directory (default: auto-detect latest)')
     parser.add_argument('--max_samples', type=int, default=None,
                        help='Maximum number of samples to test (default: all 78)')
     parser.add_argument('--no_vis', action='store_true',
@@ -632,9 +656,19 @@ def main():
     os.chdir(Path(__file__).parent.parent.parent)
     print(f"📁 Working directory: {os.getcwd()}")
     
+    # 🔧 アンサンブルディレクトリの決定
+    if args.ensemble_dir is None:
+        ensemble_dir = find_latest_ensemble_model()
+    else:
+        ensemble_dir = args.ensemble_dir
+        if not Path(ensemble_dir).exists():
+            raise FileNotFoundError(f"Specified ensemble directory not found: {ensemble_dir}")
+    
+    print(f"🎯 Using ensemble model: {ensemble_dir}")
+    
     # CellMix評価器初期化
     evaluator = CellMixEnsembleEvaluator(
-        ensemble_dir=args.ensemble_dir,
+        ensemble_dir=ensemble_dir,
         device='cuda' if torch.cuda.is_available() else 'cpu'
     )
     
@@ -646,6 +680,7 @@ def main():
     
     # 結果表示
     evaluator.print_results_summary(overall_results)
+
 
 if __name__ == '__main__':
     main()

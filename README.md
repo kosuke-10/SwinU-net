@@ -73,7 +73,7 @@ python3 make_dataset_cellmix_kfold.py
 cd /home/yoshida/Swin-Unet
 
 # 5-fold交差検定で学習（推奨: 150-200エポック）
-python3 run_experiments.py --mode kfold-all --epochs 150 --batch_size 24
+python3 run_experiments.py --mode kfold-all --epochs 400 --batch_size 24
 
 # 実行結果
 # → experiments/cellmix_kfold_YYYYMMDD_HHMMSS/ に保存

@@ -1,0 +1,6 @@
+{
+  "ensemble_method": "mean",
+  "num_models": 5,
+  "config_path": "configs/swin_tiny_patch4_window7_224_lite.yaml",
+  "ensemble_type": "kfold_crossvalidation"
+}

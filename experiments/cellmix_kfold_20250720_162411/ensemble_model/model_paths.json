@@ -1,0 +1,14 @@
+{
+  "fold_model_paths": [
+    "experiments/cellmix_kfold_20250720_162411/fold_1/best_model.pth",
+    "experiments/cellmix_kfold_20250720_162411/fold_2/best_model.pth",
+    "experiments/cellmix_kfold_20250720_162411/fold_3/best_model.pth",
+    "experiments/cellmix_kfold_20250720_162411/fold_4/best_model.pth",
+    "experiments/cellmix_kfold_20250720_162411/fold_5/best_model.pth"
+  ],
+  "num_models": 5,
+  "created_timestamp": "2025-07-21 16:55:00.855251",
+  "model_type": "SwinUnet",
+  "num_classes": 3,
+  "img_size": 224
+}
